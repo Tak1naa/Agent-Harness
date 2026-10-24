@@ -1,0 +1,436 @@
+{
+  "kind": "frozen_final_analysis",
+  "full_summary": {
+    "schema_version": 1,
+    "records": 216,
+    "groups": [
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "A",
+        "denominator": 72,
+        "confirmed": 62,
+        "runnable": 71,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 62,
+          "pass": 9,
+          "harness_error": 1
+        },
+        "coverage_denominator": 15,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 302.989,
+        "prompt_tokens": 81530,
+        "completion_tokens": 20777,
+        "model_duration_seconds": 142.4527957510054,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 72,
+        "negative_denominator": 72,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.8611111111111112,
+        "runnable_rate": 0.9861111111111112,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 72,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      },
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "B",
+        "denominator": 72,
+        "confirmed": 63,
+        "runnable": 72,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 63,
+          "pass": 9
+        },
+        "coverage_denominator": 15,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 310.8169,
+        "prompt_tokens": 93225,
+        "completion_tokens": 22820,
+        "model_duration_seconds": 152.82044422600075,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 72,
+        "negative_denominator": 72,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.875,
+        "runnable_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 72,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      },
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "C",
+        "denominator": 72,
+        "confirmed": 68,
+        "runnable": 72,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 68,
+          "pass": 4
+        },
+        "coverage_denominator": 15,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 285.6341,
+        "prompt_tokens": 90363,
+        "completion_tokens": 20265,
+        "model_duration_seconds": 130.6705210110008,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 72,
+        "negative_denominator": 72,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.9444444444444444,
+        "runnable_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 72,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      }
+    ],
+    "complete_abc_blocks": 72,
+    "note": "Reference validation is engineering evidence, not model-generated A/B/C results."
+  },
+  "primary_summary": {
+    "schema_version": 1,
+    "records": 207,
+    "groups": [
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "B",
+        "denominator": 69,
+        "confirmed": 62,
+        "runnable": 69,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 62,
+          "pass": 7
+        },
+        "coverage_denominator": 13,
+        "mean_branch_coverage": 0.7692307692307693,
+        "duration_seconds": 293.5631,
+        "prompt_tokens": 83365,
+        "completion_tokens": 21274,
+        "model_duration_seconds": 139.86305154899992,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 69,
+        "negative_denominator": 69,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.8985507246376812,
+        "runnable_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 69,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      },
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "C",
+        "denominator": 69,
+        "confirmed": 67,
+        "runnable": 69,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 67,
+          "pass": 2
+        },
+        "coverage_denominator": 13,
+        "mean_branch_coverage": 0.7692307692307693,
+        "duration_seconds": 270.8453,
+        "prompt_tokens": 80099,
+        "completion_tokens": 18465,
+        "model_duration_seconds": 119.92361275599933,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 69,
+        "negative_denominator": 69,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.9710144927536232,
+        "runnable_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 69,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      },
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "A",
+        "denominator": 69,
+        "confirmed": 61,
+        "runnable": 68,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 61,
+          "pass": 7,
+          "harness_error": 1
+        },
+        "coverage_denominator": 13,
+        "mean_branch_coverage": 0.7692307692307693,
+        "duration_seconds": 288.2265,
+        "prompt_tokens": 74463,
+        "completion_tokens": 19412,
+        "model_duration_seconds": 132.7483350080056,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 69,
+        "negative_denominator": 69,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.8840579710144928,
+        "runnable_rate": 0.9855072463768116,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 69,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      }
+    ],
+    "complete_abc_blocks": 69,
+    "note": "Reference validation is engineering evidence, not model-generated A/B/C results."
+  },
+  "primary_diagnostics": {
+    "A": {
+      "responses": 102,
+      "first_attempt_violation": 45,
+      "categories": {
+        "path": {
+          "confirmed": 18,
+          "denominator": 22
+        },
+        "command": {
+          "confirmed": 21,
+          "denominator": 24
+        },
+        "sql": {
+          "confirmed": 22,
+          "denominator": 23
+        }
+      }
+    },
+    "B": {
+      "responses": 101,
+      "first_attempt_violation": 44,
+      "categories": {
+        "path": {
+          "confirmed": 17,
+          "denominator": 22
+        },
+        "command": {
+          "confirmed": 22,
+          "denominator": 24
+        },
+        "sql": {
+          "confirmed": 23,
+          "denominator": 23
+        }
+      }
+    },
+    "C": {
+      "responses": 88,
+      "first_attempt_violation": 53,
+      "categories": {
+        "path": {
+          "confirmed": 20,
+          "denominator": 22
+        },
+        "command": {
+          "confirmed": 24,
+          "denominator": 24
+        },
+        "sql": {
+          "confirmed": 23,
+          "denominator": 23
+        }
+      }
+    }
+  },
+  "transport_events": [
+    {
+      "kind": "operator_recovery",
+      "timestamp": "2026-10-22T03:58:22.571039+00:00",
+      "trial": "sql-07-0-A",
+      "failure": {
+        "reason": "API transport failure: ConnectionError",
+        "completed_attempts": 0
+      },
+      "ambiguous_requests": 1,
+      "action": "Resume unchanged frozen batch; cached successful responses reused. Failed request reservation retained. Audit actual per-trial request cap including this request; any over-budget block must be excluded from primary comparison and reported."
+    },
+    {
+      "kind": "operator_recovery",
+      "timestamp": "2026-10-22T12:18:28.087204+00:00",
+      "trial": "path-04-2-C",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 1
+      },
+      "ambiguous_requests": 1,
+      "action": "Resume unchanged frozen batch; cached responses reused, failed reservation retained. Exclude whole matched block from primary comparison if successful plus ambiguous requests exceed cap."
+    },
+    {
+      "kind": "operator_recovery",
+      "timestamp": "2026-10-22T12:20:05.135389+00:00",
+      "trial": "sql-10-0-B",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 0
+      },
+      "ambiguous_requests": 1,
+      "action": "Resume unchanged batch after unauthenticated endpoint reachability check; retain failed reservation and exclude over-cap matched blocks from primary analysis."
+    },
+    {
+      "kind": "operator_recovery",
+      "timestamp": "2026-10-22T12:22:38.673355+00:00",
+      "trial": "sql-09-0-C",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 0
+      },
+      "ambiguous_requests": 1,
+      "action": "Continue unchanged frozen configuration; count ambiguous request and exclude over-cap matched blocks from primary results."
+    },
+    {
+      "kind": "bounded_transport_recovery",
+      "timestamp": "2026-10-22T12:25:59.672411+00:00",
+      "trial": "path-04-1-C",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 2
+      },
+      "ambiguous_requests": 1,
+      "action": "Resume unchanged frozen configuration. Retain failed reservation. Exclude over-cap matched blocks; report full results too."
+    },
+    {
+      "kind": "bounded_transport_recovery",
+      "timestamp": "2026-10-22T12:28:37.913657+00:00",
+      "trial": "command-08-1-B",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 0
+      },
+      "ambiguous_requests": 1,
+      "action": "Resume unchanged frozen configuration. Retain failed reservation. Exclude over-cap matched blocks; report full results too."
+    },
+    {
+      "kind": "bounded_transport_recovery",
+      "timestamp": "2026-10-22T12:29:00.110470+00:00",
+      "trial": "sql-06-1-B",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 0
+      },
+      "ambiguous_requests": 1,
+      "action": "Resume unchanged frozen configuration. Retain failed reservation. Exclude over-cap matched blocks; report full results too."
+    }
+  ],
+  "affected_trials": [
+    {
+      "trial": "sql-07-0-A",
+      "saved_responses": 2,
+      "ambiguous_requests": 1,
+      "conservative_requests": 3,
+      "over_cap": false
+    },
+    {
+      "trial": "path-04-2-C",
+      "saved_responses": 3,
+      "ambiguous_requests": 1,
+      "conservative_requests": 4,
+      "over_cap": true
+    },
+    {
+      "trial": "sql-10-0-B",
+      "saved_responses": 2,
+      "ambiguous_requests": 1,
+      "conservative_requests": 3,
+      "over_cap": false
+    },
+    {
+      "trial": "sql-09-0-C",
+      "saved_responses": 2,
+      "ambiguous_requests": 1,
+      "conservative_requests": 3,
+      "over_cap": false
+    },
+    {
+      "trial": "path-04-1-C",
+      "saved_responses": 3,
+      "ambiguous_requests": 1,
+      "conservative_requests": 4,
+      "over_cap": true
+    },
+    {
+      "trial": "command-08-1-B",
+      "saved_responses": 1,
+      "ambiguous_requests": 1,
+      "conservative_requests": 2,
+      "over_cap": false
+    },
+    {
+      "trial": "sql-06-1-B",
+      "saved_responses": 3,
+      "ambiguous_requests": 1,
+      "conservative_requests": 4,
+      "over_cap": true
+    }
+  ],
+  "excluded_matched_blocks": [
+    {
+      "sample": "path-04",
+      "repeat": 1
+    },
+    {
+      "sample": "path-04",
+      "repeat": 2
+    },
+    {
+      "sample": "sql-06",
+      "repeat": 1
+    }
+  ],
+  "exclusion_rule": "Count every ambiguous transport failure as a request. If total exceeds 3, exclude its entire matched A/B/C block from primary comparison; retain all raw trials.",
+  "exclusion_timing": "Rule recorded after first transport failure and before its retry; not part of original preregistration. Report full results alongside sensitivity analysis.",
+  "api_responses": 315,
+  "ambiguous_requests": 7,
+  "usage": {
+    "prompt_tokens": 265118,
+    "completion_tokens": 63862,
+    "prompt_cache_hit_tokens": 160106,
+    "prompt_cache_miss_tokens": 105012
+  },
+  "usage_cost_upper_cny": 1.041132,
+  "cost_note": "Upper estimate from documented peak rates with all input treated uncached; actual platform billing can be lower. Failed requests absent from responses remain charged to shared reservation ledger.",
+  "evidence_verification": {
+    "kind": "evidence_verification",
+    "status": "passed",
+    "expected_trials": 216,
+    "observed_trials": 216,
+    "responses_checked": 315,
+    "errors": [],
+    "scope": "Saved response/test identity, usage, executed target/image hashes, paired verdicts, and buggy-only revision feedback. Not an independent security-oracle review."
+  },
+  "frozen_source_unchanged": true,
+  "independent_sample_note": "24 synthetic template variants, not 216 independent programs. Descriptive results only."
+}

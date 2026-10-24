@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case": "changed_test_after_generation",
+      "detected": true
+    },
+    {
+      "case": "changed_revision_feedback",
+      "detected": true
+    },
+    {
+      "case": "restored_original_evidence",
+      "detected": true
+    }
+  ]
+}

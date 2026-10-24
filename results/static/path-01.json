@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "buggy.py",
+      "sha256": "9c4e7c5ec24a7fc02632ba8ae8457a1fe8b04b0af0613f4b1b1adae12b99d554",
+      "imports": [
+        "import os",
+        "from pathlib import Path",
+        "from urllib.parse import unquote"
+      ],
+      "functions": [
+        {
+          "name": "handle",
+          "line": 5,
+          "end_line": 6,
+          "signature": "handle(value: str, root: str)",
+          "sensitive_calls": [
+            {
+              "line": 6,
+              "call": "open",
+              "category": "path"
+            }
+          ],
+          "source": "def handle(value: str, root: str):\n    return open(os.path.join(root, value)).read()"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "bandit": {
+    "status": "ok",
+    "findings": []
+  }
+}

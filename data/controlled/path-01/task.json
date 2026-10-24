@@ -1,0 +1,7 @@
+{
+  "id": "path-01",
+  "category": "path",
+  "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+  "contract": "handle(value: str, root: str)",
+  "split": "dev"
+}

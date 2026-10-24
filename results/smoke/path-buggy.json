@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "target_sha256": "9c4e7c5ec24a7fc02632ba8ae8457a1fe8b04b0af0613f4b1b1adae12b99d554",
+  "harness_sha256": "fa656cbfa6e4099f7b21dc243772b071ef0e5513dc71144f63a71302a48ebcb0",
+  "category": "path",
+  "seed": 0,
+  "isolation": {
+    "rootless": true,
+    "image_id": "6c860382bc37d78483562a90152d5312d9f662c5382e126c2663ac94b51bd05b"
+  },
+  "status": "violation",
+  "payload": {
+    "exit_code": 1,
+    "reports": [
+      {
+        "nodeid": "test_generated.py::test_security",
+        "phase": "call",
+        "outcome": "failed",
+        "security_failure": true,
+        "error_type": "SecurityViolation"
+      }
+    ],
+    "events": [
+      {
+        "input": "../secret.txt",
+        "category": "path",
+        "violation": true,
+        "rejected": false,
+        "evidence": {
+          "private_content_returned": true
+        }
+      }
+    ],
+    "coverage": {
+      "covered_lines": 5,
+      "num_statements": 5,
+      "percent_covered": 100.0,
+      "percent_covered_display": "100",
+      "missing_lines": 0,
+      "excluded_lines": 0,
+      "num_branches": 0,
+      "num_partial_branches": 0,
+      "covered_branches": 0,
+      "missing_branches": 0
+    },
+    "uid": 65532
+  },
+  "duration_seconds": 12.8403
+}

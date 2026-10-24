@@ -1,0 +1,2 @@
+# CSV由标准csv.writer生成，保留原始CRLF换行及实验产物字节。
+*.csv whitespace=cr-at-eol

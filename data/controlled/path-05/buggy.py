@@ -1,0 +1,7 @@
+import os
+from pathlib import Path
+from urllib.parse import unquote
+
+def handle(value: str, root: str):
+    value = value.replace("../", "")
+    return open(os.path.join(root, value)).read()

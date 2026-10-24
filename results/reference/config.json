@@ -1,0 +1,9 @@
+{
+  "kind": "reference_validation",
+  "image": {
+    "rootless": true,
+    "image_id": "6c860382bc37d78483562a90152d5312d9f662c5382e126c2663ac94b51bd05b"
+  },
+  "manifest_sha256": "4b4ed6e809500bf6c4a11cd5cd918992355113525126fce3d7deff62217b6076",
+  "split": "all"
+}

@@ -1,0 +1,109 @@
+{
+  "kind": "reference_validation",
+  "id": "sql-09",
+  "category": "sql",
+  "split": "eval",
+  "group": "reference",
+  "repeat": 0,
+  "buggy": {
+    "schema_version": 1,
+    "target_sha256": "0e6734b517fe3f06d6f773e8d9d0861b8938db3a1992dda50b209d01248bb63a",
+    "harness_sha256": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+    "category": "sql",
+    "seed": 0,
+    "isolation": {
+      "rootless": true,
+      "image_id": "6c860382bc37d78483562a90152d5312d9f662c5382e126c2663ac94b51bd05b"
+    },
+    "status": "violation",
+    "payload": {
+      "exit_code": 1,
+      "reports": [
+        {
+          "nodeid": "test_generated.py::test_security",
+          "phase": "call",
+          "outcome": "failed",
+          "security_failure": true,
+          "error_type": "SecurityViolation"
+        }
+      ],
+      "events": [
+        {
+          "input": "x' OR 1=1 --",
+          "category": "sql",
+          "violation": true,
+          "rejected": false,
+          "evidence": {
+            "private_row_returned": true
+          }
+        }
+      ],
+      "coverage": {
+        "covered_lines": 9,
+        "num_statements": 9,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0
+      },
+      "uid": 65532
+    },
+    "duration_seconds": 12.0887
+  },
+  "fixed": {
+    "schema_version": 1,
+    "target_sha256": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+    "harness_sha256": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+    "category": "sql",
+    "seed": 0,
+    "isolation": {
+      "rootless": true,
+      "image_id": "6c860382bc37d78483562a90152d5312d9f662c5382e126c2663ac94b51bd05b"
+    },
+    "status": "pass",
+    "payload": {
+      "exit_code": 0,
+      "reports": [
+        {
+          "nodeid": "test_generated.py::test_security",
+          "phase": "call",
+          "outcome": "passed",
+          "security_failure": false,
+          "error_type": null
+        }
+      ],
+      "events": [
+        {
+          "input": "x' OR 1=1 --",
+          "category": "sql",
+          "violation": false,
+          "rejected": false,
+          "evidence": {
+            "private_row_returned": false
+          }
+        }
+      ],
+      "coverage": {
+        "covered_lines": 7,
+        "num_statements": 7,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0
+      },
+      "uid": 65532
+    },
+    "duration_seconds": 12.1343
+  },
+  "confirmed": true,
+  "false_positive": false,
+  "runnable": true
+}

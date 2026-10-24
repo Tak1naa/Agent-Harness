@@ -1,0 +1,22 @@
+{
+  "kind": "model_experiment",
+  "dataset": "controlled",
+  "split": "eval",
+  "repeats": 3,
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "thinking": "disabled",
+  "max_tokens": 1800,
+  "max_attempts": 3,
+  "image": {
+    "rootless": true,
+    "image_id": "4e0ff5b86540dd4b3de503b1227fb3c4872432bcbcadb77822d8e3f72521d2df"
+  },
+  "manifest_sha256": "4b4ed6e809500bf6c4a11cd5cd918992355113525126fce3d7deff62217b6076",
+  "prompt_code_sha256": "c3e1092b1964632821a3bace19a44c18e84dd54183f05c06cb71ce8d38786bbb",
+  "model_client_sha256": "305d24480b4cae7d20d9c52cb45e12f36704e1a4c590ef8cb76ffaed463f9f87",
+  "runner_code_sha256": "e0b200be6b9c36e746b4cb67ac127d6e87abc448d1044b698334bc6de9b0fca6",
+  "experiment_code_sha256": "ba882c29728855a6c4d9618bdf98e0f1eb26411b2d339b74cac53185e0892574",
+  "input_price_per_million": 2.0,
+  "output_price_per_million": 8.0
+}

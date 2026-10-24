@@ -1,0 +1,21 @@
+.venv*/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+.coverage*
+*.egg-info/
+.env
+.env.*
+!.env.example
+.dsh/
+build/
+results/private/
+data/generated/
+# 本地交付包含私有实验原始记录，不能通过压缩包绕过上面的忽略规则。
+deliverables/*.zip
+# 含个人信息的立项原件仅供本地阅读。
+/大创项目立项报告.pdf
+*.key
+*.pem

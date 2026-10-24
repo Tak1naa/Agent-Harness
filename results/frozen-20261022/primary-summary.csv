@@ -1,0 +1,4 @@
+kind,dataset,split,group,denominator,positive_denominator,negative_denominator,unknown_labels,candidate_violations,confirmed,confirmed_rate,runnable,runnable_rate,false_positives,false_positive_rate,negative_valid_evaluations,negative_unresolved,observed_false_positive_rate,coverage_denominator,mean_branch_coverage,duration_seconds,model_duration_seconds,missing_model_timing,missing_token_usage,prompt_tokens,completion_tokens
+model_experiment,controlled,eval,B,69,69,69,0,0,62,0.8985507246376812,69,1.0,0,0.0,69,0,0.0,13,0.7692307692307693,293.5631,139.86305154899992,0,0,83365,21274
+model_experiment,controlled,eval,C,69,69,69,0,0,67,0.9710144927536232,69,1.0,0,0.0,69,0,0.0,13,0.7692307692307693,270.8453,119.92361275599933,0,0,80099,18465
+model_experiment,controlled,eval,A,69,69,69,0,0,61,0.8840579710144928,68,0.9855072463768116,0,0.0,69,0,0.0,13,0.7692307692307693,288.2265,132.7483350080056,0,0,74463,19412

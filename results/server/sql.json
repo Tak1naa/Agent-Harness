@@ -1,0 +1,100 @@
+{
+  "buggy": {
+    "schema_version": 1,
+    "target_sha256": "d514fb7a652c9b1d6df17e58b6f6bd019bad8675b453c9a1139704d119be8e4a",
+    "harness_sha256": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+    "category": "sql",
+    "seed": 0,
+    "isolation": {
+      "rootless": true,
+      "image_id": "6c860382bc37d78483562a90152d5312d9f662c5382e126c2663ac94b51bd05b"
+    },
+    "status": "violation",
+    "payload": {
+      "exit_code": 1,
+      "reports": [
+        {
+          "nodeid": "test_generated.py::test_security",
+          "phase": "call",
+          "outcome": "failed",
+          "security_failure": true,
+          "error_type": "SecurityViolation"
+        }
+      ],
+      "events": [
+        {
+          "input": "x' OR 1=1 --",
+          "category": "sql",
+          "violation": true,
+          "rejected": false,
+          "evidence": {
+            "private_row_returned": true
+          }
+        }
+      ],
+      "coverage": {
+        "covered_lines": 8,
+        "num_statements": 8,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0
+      },
+      "uid": 65532
+    },
+    "duration_seconds": 11.2961
+  },
+  "fixed": {
+    "schema_version": 1,
+    "target_sha256": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+    "harness_sha256": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+    "category": "sql",
+    "seed": 0,
+    "isolation": {
+      "rootless": true,
+      "image_id": "6c860382bc37d78483562a90152d5312d9f662c5382e126c2663ac94b51bd05b"
+    },
+    "status": "pass",
+    "payload": {
+      "exit_code": 0,
+      "reports": [
+        {
+          "nodeid": "test_generated.py::test_security",
+          "phase": "call",
+          "outcome": "passed",
+          "security_failure": false,
+          "error_type": null
+        }
+      ],
+      "events": [
+        {
+          "input": "x' OR 1=1 --",
+          "category": "sql",
+          "violation": false,
+          "rejected": false,
+          "evidence": {
+            "private_row_returned": false
+          }
+        }
+      ],
+      "coverage": {
+        "covered_lines": 7,
+        "num_statements": 7,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0
+      },
+      "uid": 65532
+    },
+    "duration_seconds": 11.7542
+  }
+}

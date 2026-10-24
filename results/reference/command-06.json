@@ -1,0 +1,109 @@
+{
+  "kind": "reference_validation",
+  "id": "command-06",
+  "category": "command",
+  "split": "eval",
+  "group": "reference",
+  "repeat": 0,
+  "buggy": {
+    "schema_version": 1,
+    "target_sha256": "c07156266c98887548e5f74a92e46b16f1bcbc5b8f4ac0dd527be23c598a49f6",
+    "harness_sha256": "2600f66723015653d5eb8f9fc75f7f70846cc0c4b3c3ace50c114535548d6c53",
+    "category": "command",
+    "seed": 0,
+    "isolation": {
+      "rootless": true,
+      "image_id": "6c860382bc37d78483562a90152d5312d9f662c5382e126c2663ac94b51bd05b"
+    },
+    "status": "violation",
+    "payload": {
+      "exit_code": 1,
+      "reports": [
+        {
+          "nodeid": "test_generated.py::test_security",
+          "phase": "call",
+          "outcome": "failed",
+          "security_failure": true,
+          "error_type": "SecurityViolation"
+        }
+      ],
+      "events": [
+        {
+          "input": "$(touch /tmp/tests/test_security0/b40aed81f9f3463a9e145338181f51c1/command-marker)",
+          "category": "command",
+          "violation": true,
+          "rejected": false,
+          "evidence": {
+            "unexpected_marker_created": true
+          }
+        }
+      ],
+      "coverage": {
+        "covered_lines": 5,
+        "num_statements": 5,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0
+      },
+      "uid": 65532
+    },
+    "duration_seconds": 12.6467
+  },
+  "fixed": {
+    "schema_version": 1,
+    "target_sha256": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+    "harness_sha256": "2600f66723015653d5eb8f9fc75f7f70846cc0c4b3c3ace50c114535548d6c53",
+    "category": "command",
+    "seed": 0,
+    "isolation": {
+      "rootless": true,
+      "image_id": "6c860382bc37d78483562a90152d5312d9f662c5382e126c2663ac94b51bd05b"
+    },
+    "status": "pass",
+    "payload": {
+      "exit_code": 0,
+      "reports": [
+        {
+          "nodeid": "test_generated.py::test_security",
+          "phase": "call",
+          "outcome": "passed",
+          "security_failure": false,
+          "error_type": null
+        }
+      ],
+      "events": [
+        {
+          "input": "$(touch /tmp/tests/test_security0/6be84bc3cbf44dbf8f4d0caaac77cd92/command-marker)",
+          "category": "command",
+          "violation": false,
+          "rejected": false,
+          "evidence": {
+            "unexpected_marker_created": false
+          }
+        }
+      ],
+      "coverage": {
+        "covered_lines": 5,
+        "num_statements": 5,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0
+      },
+      "uid": 65532
+    },
+    "duration_seconds": 12.4992
+  },
+  "confirmed": true,
+  "false_positive": false,
+  "runnable": true
+}

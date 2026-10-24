@@ -1,0 +1,109 @@
+{
+  "kind": "reference_validation",
+  "id": "path-08",
+  "category": "path",
+  "split": "eval",
+  "group": "reference",
+  "repeat": 0,
+  "buggy": {
+    "schema_version": 1,
+    "target_sha256": "f2a7110948d960d79d5b2f7483a889c6621c36146076b37a1a4f14b723f27c5e",
+    "harness_sha256": "a1ac1e21665b7a145cbff3057a202daa77128f5a86e47540ce184e4cf5d159f5",
+    "category": "path",
+    "seed": 0,
+    "isolation": {
+      "rootless": true,
+      "image_id": "6c860382bc37d78483562a90152d5312d9f662c5382e126c2663ac94b51bd05b"
+    },
+    "status": "violation",
+    "payload": {
+      "exit_code": 1,
+      "reports": [
+        {
+          "nodeid": "test_generated.py::test_security",
+          "phase": "call",
+          "outcome": "failed",
+          "security_failure": true,
+          "error_type": "SecurityViolation"
+        }
+      ],
+      "events": [
+        {
+          "input": "/tmp/tests/test_security0/1447478fb4bb42579d9c7811fca3d078/secret.txt",
+          "category": "path",
+          "violation": true,
+          "rejected": false,
+          "evidence": {
+            "private_content_returned": true
+          }
+        }
+      ],
+      "coverage": {
+        "covered_lines": 5,
+        "num_statements": 5,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0
+      },
+      "uid": 65532
+    },
+    "duration_seconds": 12.6351
+  },
+  "fixed": {
+    "schema_version": 1,
+    "target_sha256": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+    "harness_sha256": "a1ac1e21665b7a145cbff3057a202daa77128f5a86e47540ce184e4cf5d159f5",
+    "category": "path",
+    "seed": 0,
+    "isolation": {
+      "rootless": true,
+      "image_id": "6c860382bc37d78483562a90152d5312d9f662c5382e126c2663ac94b51bd05b"
+    },
+    "status": "pass",
+    "payload": {
+      "exit_code": 0,
+      "reports": [
+        {
+          "nodeid": "test_generated.py::test_security",
+          "phase": "call",
+          "outcome": "passed",
+          "security_failure": false,
+          "error_type": null
+        }
+      ],
+      "events": [
+        {
+          "input": "/tmp/tests/test_security0/ca4f51977eea49b68e91c4b76c482497/secret.txt",
+          "category": "path",
+          "violation": false,
+          "rejected": true,
+          "evidence": {
+            "private_content_returned": false
+          }
+        }
+      ],
+      "coverage": {
+        "covered_lines": 8,
+        "num_statements": 9,
+        "percent_covered": 81.81818181818181,
+        "percent_covered_display": "82",
+        "missing_lines": 1,
+        "excluded_lines": 0,
+        "num_branches": 2,
+        "num_partial_branches": 1,
+        "covered_branches": 1,
+        "missing_branches": 1
+      },
+      "uid": 65532
+    },
+    "duration_seconds": 12.6889
+  },
+  "confirmed": true,
+  "false_positive": false,
+  "runnable": true
+}
