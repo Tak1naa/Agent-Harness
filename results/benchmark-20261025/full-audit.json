@@ -1,0 +1,959 @@
+{
+  "kind": "model_run_audit",
+  "group_diagnostics": {
+    "A": {
+      "completed_trials": 24,
+      "fixed_statuses": {
+        "pass": 24
+      },
+      "fixed_valid_evaluations": 24,
+      "fixed_unresolved": 0,
+      "fixed_observed_false_positive_rate": 0.0,
+      "attempts": 37,
+      "first_attempt_buggy_violation": 15
+    },
+    "B": {
+      "completed_trials": 24,
+      "fixed_statuses": {
+        "pass": 24
+      },
+      "fixed_valid_evaluations": 24,
+      "fixed_unresolved": 0,
+      "fixed_observed_false_positive_rate": 0.0,
+      "attempts": 34,
+      "first_attempt_buggy_violation": 16
+    },
+    "C": {
+      "completed_trials": 24,
+      "fixed_statuses": {
+        "pass": 24
+      },
+      "fixed_valid_evaluations": 24,
+      "fixed_unresolved": 0,
+      "fixed_observed_false_positive_rate": 0.0,
+      "attempts": 36,
+      "first_attempt_buggy_violation": 16
+    }
+  },
+  "summary": {
+    "schema_version": 1,
+    "records": 72,
+    "groups": [
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "A",
+        "denominator": 24,
+        "confirmed": 20,
+        "runnable": 23,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 20,
+          "pass": 3,
+          "harness_error": 1
+        },
+        "coverage_denominator": 5,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 113.7409,
+        "prompt_tokens": 27938,
+        "completion_tokens": 6855,
+        "model_duration_seconds": 48.52520531600749,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 24,
+        "negative_denominator": 24,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.8333333333333334,
+        "runnable_rate": 0.9583333333333334,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 24,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      },
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "B",
+        "denominator": 24,
+        "confirmed": 22,
+        "runnable": 24,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 22,
+          "pass": 2
+        },
+        "coverage_denominator": 5,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 113.4691,
+        "prompt_tokens": 26842,
+        "completion_tokens": 7050,
+        "model_duration_seconds": 48.930235092993826,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 24,
+        "negative_denominator": 24,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.9166666666666666,
+        "runnable_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 24,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      },
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "C",
+        "denominator": 24,
+        "confirmed": 22,
+        "runnable": 24,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 22,
+          "pass": 2
+        },
+        "coverage_denominator": 5,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 113.0492,
+        "prompt_tokens": 36765,
+        "completion_tokens": 7366,
+        "model_duration_seconds": 53.01368213596288,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 24,
+        "negative_denominator": 24,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.9166666666666666,
+        "runnable_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 24,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      }
+    ],
+    "complete_abc_blocks": 24,
+    "note": "Reference validation is engineering evidence, not model-generated A/B/C results."
+  },
+  "api_responses": 107,
+  "usage": {
+    "prompt_tokens": 91545,
+    "completion_tokens": 21271,
+    "prompt_cache_hit_tokens": 62453,
+    "prompt_cache_miss_tokens": 29092
+  },
+  "missing_usage_responses": 0,
+  "usage_cost_upper_cny": 0.353258,
+  "reserved_upper_cny": 2.434186,
+  "cost_note": "Upper estimate from documented peak rates with all input treated uncached; actual platform billing can be lower. Failed requests absent from responses remain charged to shared reservation ledger.",
+  "finish_reasons": {
+    "stop": 107
+  },
+  "returned_models": {
+    "deepseek-flash": 107
+  },
+  "attempt_statuses": {
+    "violation": 64,
+    "harness_error": 23,
+    "pass": 20
+  },
+  "cases": [
+    {
+      "sample": "command-03",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "command-04",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "command-05",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "command-06",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "command-07",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "command-08",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": false,
+          "runnable": true,
+          "buggy_status": "pass",
+          "fixed_status": "pass",
+          "attempts": 3
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "command-09",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "command-10",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "path-03",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "path-04",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": false,
+          "runnable": true,
+          "buggy_status": "pass",
+          "fixed_status": "pass",
+          "attempts": 3
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": false,
+          "runnable": true,
+          "buggy_status": "pass",
+          "fixed_status": "pass",
+          "attempts": 3
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": false,
+          "runnable": true,
+          "buggy_status": "pass",
+          "fixed_status": "pass",
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "sample": "path-05",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "path-06",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "path-07",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ]
+    },
+    {
+      "sample": "path-08",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "sample": "path-09",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "path-10",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": false,
+          "runnable": true,
+          "buggy_status": "pass",
+          "fixed_status": "pass",
+          "attempts": 3
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": false,
+          "runnable": true,
+          "buggy_status": "pass",
+          "fixed_status": "pass",
+          "attempts": 3
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": false,
+          "runnable": true,
+          "buggy_status": "pass",
+          "fixed_status": "pass",
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "sample": "sql-03",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "sql-04",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "sql-05",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "sample": "sql-06",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "sql-07",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ]
+    },
+    {
+      "sample": "sql-08",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": false,
+          "runnable": false,
+          "buggy_status": "harness_error",
+          "fixed_status": "pass",
+          "attempts": 3
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "sample": "sql-09",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 1
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ]
+    },
+    {
+      "sample": "sql-10",
+      "A": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "B": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ],
+      "C": [
+        {
+          "repeat": 0,
+          "confirmed": true,
+          "runnable": true,
+          "buggy_status": "violation",
+          "fixed_status": "pass",
+          "attempts": 2
+        }
+      ]
+    }
+  ]
+}

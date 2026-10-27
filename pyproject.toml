@@ -18,11 +18,16 @@ dependencies = [
   "pydantic==2.11.7",
   "pydantic-settings==2.10.1",
   "starlette==0.47.3",
+  "uvicorn==0.54.0",
 ]
 
 [project.scripts]
 safety-harness = "safety_harness.cli:main"
 safety-harness-mcp = "safety_harness.mcp_server:main"
+safety-harness-web = "safety_harness.web:main"
+
+[tool.setuptools.package-data]
+safety_harness = ["web_assets/*.html", "web_assets/*.css", "web_assets/*.js"]
 
 [tool.setuptools.packages.find]
 include = ["safety_harness*"]

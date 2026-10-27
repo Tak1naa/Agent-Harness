@@ -1,0 +1,23 @@
+{
+  "git_commit": "5de0e72a9b8a04993e3f3995d4da32e74174d0cd",
+  "source_sha256": {
+    "safety_harness/__init__.py": "381121d16a1e655ea603cb3dd128b009180d8bfb0bca65464a8b313721e95d0a",
+    "safety_harness/io.py": "77e57cf1398e697f3e6cba59967ae503dde2354953f448baa62240cdac9fa7dd",
+    "safety_harness/analyze.py": "29a8bc54308c669faf0681dbdbb3635c813b5944bd9401cfa7344474a33388e0",
+    "safety_harness/policy.py": "2cb13eb4fd64b056cbe4483a67f5b5a12dee46dd2b7f3830e97b128458585d89",
+    "safety_harness/dataset.py": "ec63c506ef2cb93e090f6032e96c4280575b290cb7f98b080bb35a773ea70063",
+    "safety_harness/runner.py": "f1cb683b0d9786f3c3f284131cfc7b22ccb2a703f0468f1e603503d9eadf66ca",
+    "safety_harness/prompts.py": "52cf17c569708a60767d7ad4044a77858f5712b48870c48a148c0a81d6446c8a",
+    "safety_harness/model.py": "71150b501e0b5f8aa943a3d93b6ae442ba802cb31a5cd2ae32d4022af404d4c0",
+    "safety_harness/experiment.py": "35a7a0befc1398b1cd840bc3257c265ad06d80c28f07cd57d4a773e7df4d9bea",
+    "safety_harness/cli.py": "7665565d0a39ebb72050612987f386efbf022bf3780e086c1cd2ed135d5df628",
+    "safety_harness/mcp_server.py": "2b0d6985084bf52044136c8b2576ecac4ee81eb3c500c04b8713955e7161c07c",
+    "containers/security_probe.py": "3f18ce22dec76a4809432d144aeda339c226d6277a92830d5c188c02d47ae297",
+    "containers/worker.py": "273aa66a988f0ae3f3743a806bb208e5e19f03c553507856c18b38c86785d649"
+  },
+  "budget_before_cny": 8.954656000000002,
+  "reservations_before": 397,
+  "requested_trials": 72,
+  "date_label": "2026-10-25",
+  "retry_policy": "Keep all transport failures as ambiguous requests. Report full results and exclude entire A/B/C blocks exceeding three conservative requests in sensitivity summary. Policy recorded after first timeout, before resuming."
+}

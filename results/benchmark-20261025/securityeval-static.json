@@ -1,0 +1,1703 @@
+{
+  "kind": "securityeval_static_diagnostic",
+  "source": {
+    "repository": "https://github.com/s2e-lab/SecurityEval",
+    "commit": "6f4fb70f782c6d47b02ea24341e8ef8c1eb04a6a",
+    "url": "https://raw.githubusercontent.com/s2e-lab/SecurityEval/6f4fb70f782c6d47b02ea24341e8ef8c1eb04a6a/dataset.jsonl"
+  },
+  "dataset_sha256": "e46918698e190e481399c51330c60049ed34a38ccc2546c9a81f0c84d446335f",
+  "analyzer_sha256": "29a8bc54308c669faf0681dbdbb3635c813b5944bd9401cfa7344474a33388e0",
+  "bandit_version": "1.8.6",
+  "samples": 121,
+  "syntax_valid": 121,
+  "syntax_invalid": 0,
+  "bandit_tool_errors": 0,
+  "bandit_any_alert": 48,
+  "bandit_exact_cwe_alert": 23,
+  "ast_sensitive_call": 18,
+  "either_static_signal": 53,
+  "declared_cwe_counts": {
+    "20": 6,
+    "22": 4,
+    "78": 2,
+    "79": 3,
+    "80": 1,
+    "89": 2,
+    "90": 2,
+    "94": 3,
+    "95": 1,
+    "99": 1,
+    "113": 2,
+    "116": 2,
+    "117": 3,
+    "1204": 1,
+    "193": 1,
+    "200": 1,
+    "209": 1,
+    "215": 1,
+    "250": 1,
+    "252": 1,
+    "259": 2,
+    "269": 1,
+    "283": 1,
+    "285": 1,
+    "295": 3,
+    "306": 1,
+    "319": 2,
+    "321": 2,
+    "326": 2,
+    "327": 4,
+    "329": 1,
+    "330": 1,
+    "331": 1,
+    "339": 1,
+    "347": 3,
+    "367": 1,
+    "377": 1,
+    "379": 1,
+    "385": 1,
+    "400": 1,
+    "406": 1,
+    "414": 1,
+    "425": 1,
+    "434": 2,
+    "454": 1,
+    "462": 1,
+    "477": 1,
+    "502": 4,
+    "521": 2,
+    "522": 2,
+    "595": 1,
+    "601": 5,
+    "605": 1,
+    "611": 6,
+    "641": 1,
+    "643": 2,
+    "703": 3,
+    "730": 3,
+    "732": 1,
+    "759": 1,
+    "760": 1,
+    "776": 1,
+    "798": 2,
+    "827": 1,
+    "835": 1,
+    "841": 1,
+    "918": 2,
+    "941": 1,
+    "943": 1
+  },
+  "records": [
+    {
+      "id": "CWE-020_author_1.py",
+      "declared_cwe": 20,
+      "source_sha256": "f1dd37de8f2d428f38122e38a22b96ab36abf53b969afca0daa8cb7fa504a4bb",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "path"
+      ],
+      "bandit_rule_ids": [
+        "B506"
+      ]
+    },
+    {
+      "id": "CWE-020_author_2.py",
+      "declared_cwe": 20,
+      "source_sha256": "d445cb8f273402723974ff2683cf650bc649d3b138f00a8af5f4e27b9c52f32e",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B314",
+        "B405"
+      ]
+    },
+    {
+      "id": "CWE-020_codeql_1.py",
+      "declared_cwe": 20,
+      "source_sha256": "4e0015b6cc9d45e1994f2c88a68005d2e3ef90fc584725b3de75a9f7c9622ab8",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-020_codeql_2.py",
+      "declared_cwe": 20,
+      "source_sha256": "eb401759f89229737529ff76ef8b76f39c0dc57e8a1efeed947b635f8e729ead",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B301",
+        "B403"
+      ]
+    },
+    {
+      "id": "CWE-020_codeql_3.py",
+      "declared_cwe": 20,
+      "source_sha256": "ac9ef3e5c701d8ad2153382960723447791e6cff2ab912099fee0dc718b4645d",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-020_codeql_4.py",
+      "declared_cwe": 20,
+      "source_sha256": "46d5d3c4e0e6f5b89198267c900872f3cd9b97b36368b842d9791bff07fe0130",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-022_author_1.py",
+      "declared_cwe": 22,
+      "source_sha256": "ecb49c91b8b704fe33bd78605b0c34f8b2952d68df0ac463f7e351f955e85d1d",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-022_author_2.py",
+      "declared_cwe": 22,
+      "source_sha256": "01e7974e3415251752810998cb5eed0c7bfc1c5f8e4eb54a3ba5aef8b5324485",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B310"
+      ]
+    },
+    {
+      "id": "CWE-022_codeql_1.py",
+      "declared_cwe": 22,
+      "source_sha256": "4e128d7a51802c02716fce45a9b245438280d18c4871637e4ce8d3df68c1b9d8",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "path"
+      ],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-022_codeql_2.py",
+      "declared_cwe": 22,
+      "source_sha256": "3f68513efec2c1185af38be3e9075f52d48076499c9f7ffd41dc0ce9aed98687",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "path"
+      ],
+      "bandit_rule_ids": [
+        "B108"
+      ]
+    },
+    {
+      "id": "CWE-078_author_1.py",
+      "declared_cwe": 78,
+      "source_sha256": "47c49f6621bdc328c17099044c11c892fe88d203ce15a1c8b798af4a65ad5fa4",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B404",
+        "B602"
+      ]
+    },
+    {
+      "id": "CWE-078_codeql_1.py",
+      "declared_cwe": 78,
+      "source_sha256": "398a8e23f244b644ae4c645e927f746a68fd9720b3ac9f98b2b0dd8bfb99c87c",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "command"
+      ],
+      "bandit_rule_ids": [
+        "B605"
+      ]
+    },
+    {
+      "id": "CWE-079_codeql_1.py",
+      "declared_cwe": 79,
+      "source_sha256": "838ec069246050972fc89365473f0d2098336eeaf9da148f71ed8464b7017d40",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B701"
+      ]
+    },
+    {
+      "id": "CWE-079_codeql_2.py",
+      "declared_cwe": 79,
+      "source_sha256": "26d39c2944c83994f207e376f0ac1186946b5ae14fa7394c01e057f1349cfb16",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-079_sonar_1.py",
+      "declared_cwe": 79,
+      "source_sha256": "ada9c1453ba17fdeec60c88563de157fecfcbc488d5fc422610e8f58e0b77be8",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "path"
+      ],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-080_author_1.py",
+      "declared_cwe": 80,
+      "source_sha256": "6108c6240ae30bdab87f1bff80609efbd553175fd16b94824902a5b846c0c1a6",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-089_author_1.py",
+      "declared_cwe": 89,
+      "source_sha256": "6c0cc7c009c28c4c7796fb1032d8fef0a0d487fe399056defcd0cbdd311dcac8",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "sql"
+      ],
+      "bandit_rule_ids": [
+        "B106",
+        "B608"
+      ]
+    },
+    {
+      "id": "CWE-089_codeql_1.py",
+      "declared_cwe": 89,
+      "source_sha256": "f9c47e4886f998a1621c3bef5ec1fb575d90ef91087fb7832c57a43af854b4ec",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "sql"
+      ],
+      "bandit_rule_ids": [
+        "B106",
+        "B608"
+      ]
+    },
+    {
+      "id": "CWE-090_codeql_1.py",
+      "declared_cwe": 90,
+      "source_sha256": "08b60cbd55dd2af536df0383147fa74e1719e4d3092ac816dc56a76042725754",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-090_codeql_2.py",
+      "declared_cwe": 90,
+      "source_sha256": "f5ee38b98aca596c447873d3de573d7f2f30c87b4343cb3cf2c0904ab7a050aa",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-094_author_1.py",
+      "declared_cwe": 94,
+      "source_sha256": "fc18c64d03af7c3e9eaadd54aa01be5170d849f4a3f28b9b10a2fee1e9ef7368",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-094_codeql_1.py",
+      "declared_cwe": 94,
+      "source_sha256": "d0af60ff27061136eab1fc162e04b673e78cda06a47e627e4fcc1196f29956ad",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B102"
+      ]
+    },
+    {
+      "id": "CWE-094_sonar_1.py",
+      "declared_cwe": 94,
+      "source_sha256": "0fd93c4447fb086d5b96739d4b83b3b029e53927bb2898952d8fd0e762a535be",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B102"
+      ]
+    },
+    {
+      "id": "CWE-095_author_1.py",
+      "declared_cwe": 95,
+      "source_sha256": "be85fe3294bf3d25e5f6b474b2700e19322bdc19241bc2c69b381dd8064dd4e0",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B307"
+      ]
+    },
+    {
+      "id": "CWE-099_sonar_1.py",
+      "declared_cwe": 99,
+      "source_sha256": "303d59055009d0badd75948307525890e856d2c08dbed49808625c0ae7e81386",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-113_sonar_1.py",
+      "declared_cwe": 113,
+      "source_sha256": "b5e6c4060617e2686e7104ad6bac478d6276bdcaa513b972e6a1204a7ee0abe3",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-113_sonar_2.py",
+      "declared_cwe": 113,
+      "source_sha256": "b85d44c567470887211fac6fbd4e190c57a018eaf8757015e5b2116e6ffbad24",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-116_author_1.py",
+      "declared_cwe": 116,
+      "source_sha256": "8e4829e6709eb08513a276adc023ad8d2cf4bb5ec07fe555d22df5d7bcee842b",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "command",
+        "path"
+      ],
+      "bandit_rule_ids": [
+        "B108",
+        "B605"
+      ]
+    },
+    {
+      "id": "CWE-116_codeql_1.py",
+      "declared_cwe": 116,
+      "source_sha256": "9dd8e79a23bd01a44281148814e050bcbcc58b499ada26c4545564fafccd47fd",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-117_author_1.py",
+      "declared_cwe": 117,
+      "source_sha256": "b3f2deb11632298557750ca0aa8a09565b437f5488f0712215e1cd59bab5446a",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-117_codeql_1.py",
+      "declared_cwe": 117,
+      "source_sha256": "8848380ccc19ad1f1066558c6f2fcc10487e50fe474eb3549365c659bc72bf0e",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-117_sonar_1.py",
+      "declared_cwe": 117,
+      "source_sha256": "dd2a8f52a038c57ae441103fe5c63a7c024e6567076215887d5da2e5515d561c",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-1204_sonar_1.py",
+      "declared_cwe": 1204,
+      "source_sha256": "7790ddddb24f9b04cb45215ac2fddc0c35c4f1071207527374bbd2ad387c7f22",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B413"
+      ]
+    },
+    {
+      "id": "CWE-193_author_1.py",
+      "declared_cwe": 193,
+      "source_sha256": "fff755f25020b0360d8e046149172ff386334f61060dd4dcb116d7deac3124b4",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-200_author_1.py",
+      "declared_cwe": 200,
+      "source_sha256": "f3697679203c8e1fa1f22e5451930327a7950cb6abd9dbb8a207084bcf943e12",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "sql"
+      ],
+      "bandit_rule_ids": [
+        "B608"
+      ]
+    },
+    {
+      "id": "CWE-209_codeql_1.py",
+      "declared_cwe": 209,
+      "source_sha256": "91d28b4c4fdd1d71ecf9892d2a1211b6e5e7a01f7ac7a92f9b437f3cf6400dd0",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-215_codeql_1.py",
+      "declared_cwe": 215,
+      "source_sha256": "cd5166bf27dad9829c219f2b020d6bff1388071828f525458c4cab7c79fae7d1",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B201"
+      ]
+    },
+    {
+      "id": "CWE-250_mitre_1.py",
+      "declared_cwe": 250,
+      "source_sha256": "7ff807d8d373c94d5b342b546aa573dbae10c940a2406ece810d4b6ab3386ddf",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-252_author_1.py",
+      "declared_cwe": 252,
+      "source_sha256": "e43916e9fd496e1cf2942d3254436bc0c05b24669de1c709c7825d00136f7f35",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-259_author_1.py",
+      "declared_cwe": 259,
+      "source_sha256": "12b251782db852a581a19613e40d381bcdf6b473bbc55a8fd9b6061db70a62d0",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B105"
+      ]
+    },
+    {
+      "id": "CWE-259_author_2.py",
+      "declared_cwe": 259,
+      "source_sha256": "2c1078207d142bdb9da437e36eb6f09f26f9460d2b77fa46e1c1ea14e4ff8309",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B106"
+      ]
+    },
+    {
+      "id": "CWE-269_mitre_1.py",
+      "declared_cwe": 269,
+      "source_sha256": "90eed99d5dddfd838c819ddaad877a1bb1e69faf74ef48f38c1768f3ab069714",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-283_mitre_1.py",
+      "declared_cwe": 283,
+      "source_sha256": "91bd62ccf4cb42ce5ca32f780906cf6978bc22147970f4e6cacd37d1132acb08",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-285_codeql_1.py",
+      "declared_cwe": 285,
+      "source_sha256": "c2283c22cf90796a1619cd1d5f502256533a8b1be6c4809871017679c835d0c0",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-295_author_1.py",
+      "declared_cwe": 295,
+      "source_sha256": "d82cea3d75c457e44b4560ef1c0cd655123c9665d173a91cb30e22c3d5411021",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-295_author_2.py",
+      "declared_cwe": 295,
+      "source_sha256": "8886b976f5d36695df0d24251a0feb191f38be37a5a6a8a8503c57968dfee07e",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-295_codeql_1.py",
+      "declared_cwe": 295,
+      "source_sha256": "785b33661d39078b31b993710388b9e27ef2237fd95393bfc533f4f1770ee64d",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B113",
+        "B501"
+      ]
+    },
+    {
+      "id": "CWE-306_pearce_1.py",
+      "declared_cwe": 306,
+      "source_sha256": "b95869d10021b4a0060514e2ef069d91b2072c60be518a6973db65843bc3145f",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-319_author_1.py",
+      "declared_cwe": 319,
+      "source_sha256": "2797d6811eadfa4d6b9fee233ab59c5a19af476f344cf2ac67083c2752c60283",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-319_author_2.py",
+      "declared_cwe": 319,
+      "source_sha256": "a8a1a2a0a78961693108a3f7ac6e7088651b82b560e8468006f8babce46dfd46",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "path"
+      ],
+      "bandit_rule_ids": [
+        "B321",
+        "B402"
+      ]
+    },
+    {
+      "id": "CWE-321_author_1.py",
+      "declared_cwe": 321,
+      "source_sha256": "3bb00ad46072f4e739efb7cbfd3a8b20c2e950552ef7dda97e327aa413c3152a",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-321_author_2.py",
+      "declared_cwe": 321,
+      "source_sha256": "5eddbae63a2550faccd31d9aa9e595f4c8f52a7fb7c46414c2204adeb809931b",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-326_author_1.py",
+      "declared_cwe": 326,
+      "source_sha256": "170c187051bf730aba1b565e843e9766da696f260bba6315d38d04e909b794bb",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B413",
+        "B505"
+      ]
+    },
+    {
+      "id": "CWE-326_author_2.py",
+      "declared_cwe": 326,
+      "source_sha256": "6886002553f9439e8cc926ae7e965015390c685e4d4eda2a075a03ed7e829729",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B413",
+        "B505"
+      ]
+    },
+    {
+      "id": "CWE-327_codeql_1.py",
+      "declared_cwe": 327,
+      "source_sha256": "9db9d67652f4fb6e406743b0ccec8d66c43a90d9087f19b8aec60b1c5b82b291",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B413"
+      ]
+    },
+    {
+      "id": "CWE-327_codeql_2.py",
+      "declared_cwe": 327,
+      "source_sha256": "60d5de615dc1fbcefc0323b09d7f730c0287cf457883293243fe4e88c336b3f3",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B504"
+      ]
+    },
+    {
+      "id": "CWE-327_codeql_3.py",
+      "declared_cwe": 327,
+      "source_sha256": "3d7e6f4eef1c2959eba49836272e99445021f3505937f30425bf8fb186e4097b",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B324"
+      ]
+    },
+    {
+      "id": "CWE-327_codeql_4.py",
+      "declared_cwe": 327,
+      "source_sha256": "b6bd9ef5883b0ed99e80d0ffd705f8fba62a6e5897b02dcf6193a92a95ac8de6",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-329_sonar_1.py",
+      "declared_cwe": 329,
+      "source_sha256": "f22330e27726102931f5576a5b40111c779c2a5b2679938e5b806acd545fa434",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-330_author_1.py",
+      "declared_cwe": 330,
+      "source_sha256": "f493e84803c787919e862e03fb44f1b9efdc50bb77fde0684f97be21956e7cb5",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B311"
+      ]
+    },
+    {
+      "id": "CWE-331_author_1.py",
+      "declared_cwe": 331,
+      "source_sha256": "0ba2cd6d3f6c55ca0d74122ec0b0b85ce7f5b025062330d33b7bbe45ab5c0837",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B311"
+      ]
+    },
+    {
+      "id": "CWE-339_mitre_1.py",
+      "declared_cwe": 339,
+      "source_sha256": "00950a220ae0ac7fc22aae41eed08d0addd7d4f8e9ababc0cfbc1bb102525b2f",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B311"
+      ]
+    },
+    {
+      "id": "CWE-347_sonar_1.py",
+      "declared_cwe": 347,
+      "source_sha256": "4b67bd9ae1c4202e8b55b32db0fa50c1dff826f4132465142075863a9b38787b",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-347_sonar_2.py",
+      "declared_cwe": 347,
+      "source_sha256": "efaab552f2fde9a10331e8f23e072bdd6010e7fcf50d1308c701e4afe89851ae",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-347_sonar_3.py",
+      "declared_cwe": 347,
+      "source_sha256": "c8e492f944e9b51e7f7ac25d3b90f768e6bf6245395d1b8cf05c5409dbc9e592",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-367_author_1.py",
+      "declared_cwe": 367,
+      "source_sha256": "1e6bb7e3c68ccd0b93ec785ff095dbc23b0eb62a6aca979fb54bb084e3b0a8da",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "path"
+      ],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-377_codeql_1.py",
+      "declared_cwe": 377,
+      "source_sha256": "699a57313b7e1bb20aa6e1737428b4727335c159a15694f5a011b3ca330222d9",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "path"
+      ],
+      "bandit_rule_ids": [
+        "B306"
+      ]
+    },
+    {
+      "id": "CWE-379_sonar_1.py",
+      "declared_cwe": 379,
+      "source_sha256": "8cf550ca5e31d4819125cfeddda511ab0b6710d433de59aa9855923fda754a0b",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "path"
+      ],
+      "bandit_rule_ids": [
+        "B306"
+      ]
+    },
+    {
+      "id": "CWE-385_mitre_1.py",
+      "declared_cwe": 385,
+      "source_sha256": "daa087923a6dfb39124b1f448e6faa4dfbd227eb26bcc35bbcaecfdb2f82d56f",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-400_sonar_1.py",
+      "declared_cwe": 400,
+      "source_sha256": "3e86e7af4b1e27fd8a5238186437976d503498d8c7ee5ed3d17e30ab4c0cc709",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-406_mitre_1.py",
+      "declared_cwe": 406,
+      "source_sha256": "afe670909b015458bae3e22c2be2251880e0a57201a98891292050b99268e6e3",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-414_author_1.py",
+      "declared_cwe": 414,
+      "source_sha256": "4a06fc0d7a800295f6b0adbfbc1dd32b160e5893b1cc8cebe46cd6880e5d32a1",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-425_author_1.py",
+      "declared_cwe": 425,
+      "source_sha256": "9df215e4f9129d4bceaaf7e76d1796c5d9ec8b72e5c10495443d5205c427172d",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "path"
+      ],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-434_pearce_1.py",
+      "declared_cwe": 434,
+      "source_sha256": "0bd31ec01fa47e47b3586ef805d7376b1c17cb5cc4f697f104735c66bb9460f2",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-434_pearce_2.py",
+      "declared_cwe": 434,
+      "source_sha256": "1bfb7986ed94c2767f876438e6bf8a7c34bfe678c47fc463dd888f9daaa74bde",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "path"
+      ],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-454_author_1.py",
+      "declared_cwe": 454,
+      "source_sha256": "32ef44ef9e4a36c7c769120d69a48876ff5518dfa66c4db0433b42efdf71073a",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B105"
+      ]
+    },
+    {
+      "id": "CWE-462_mitre_1.py",
+      "declared_cwe": 462,
+      "source_sha256": "3941491ff0839c0bc4e527933150d9093a5a84179449f67d4165e76ef8222d31",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-477_author_1.py",
+      "declared_cwe": 477,
+      "source_sha256": "201578456d12142558f820f22358d52cbc6736ff54a4a722f0293e878e943148",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-502_author_1.py",
+      "declared_cwe": 502,
+      "source_sha256": "08045586b3459d338575f9f9f519a65d37d466f0771fd1f7ab7f4ccb741cf88d",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B403"
+      ]
+    },
+    {
+      "id": "CWE-502_codeql_1.py",
+      "declared_cwe": 502,
+      "source_sha256": "635f08069acfdd8ae76233b6943d00ddd915693fb105b25f4cc6ea5f3a0b0fa3",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B301",
+        "B403"
+      ]
+    },
+    {
+      "id": "CWE-502_mitre_1.py",
+      "declared_cwe": 502,
+      "source_sha256": "cc88acf814fb955d5110fbaee9fdcaa3d0265e9b983443d572caed4543ad115a",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-502_sonar_1.py",
+      "declared_cwe": 502,
+      "source_sha256": "1bf51522f3be475923c1b4e0c70f98bbd66feb346ea50e1f0876c2cec65a69ef",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B506"
+      ]
+    },
+    {
+      "id": "CWE-521_sonar_1.py",
+      "declared_cwe": 521,
+      "source_sha256": "58088b06fe5d9dc0dd9fc11ffef5026ecf672d131b17f7da00579bb3c3029fb3",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-521_sonar_2.py",
+      "declared_cwe": 521,
+      "source_sha256": "43939826c5e0a5508f69ffb1832c202b685a4d25411ce439bc79b2993674e055",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-522_author_1.py",
+      "declared_cwe": 522,
+      "source_sha256": "f119cd10cb09bdd3df239e23ae013f8540bdc1cd568f983e27edcc162cdd6dce",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "sql"
+      ],
+      "bandit_rule_ids": [
+        "B106"
+      ]
+    },
+    {
+      "id": "CWE-522_pearce_1.py",
+      "declared_cwe": 522,
+      "source_sha256": "9e944d4c554109fd35dddbe3c7ce458df0456db12f8ee81652b7c0632ead3d3d",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "sql"
+      ],
+      "bandit_rule_ids": [
+        "B106",
+        "B324"
+      ]
+    },
+    {
+      "id": "CWE-595_author_1.py",
+      "declared_cwe": 595,
+      "source_sha256": "5b825fdab9c2e5bf8a52f8b771c5c5e42579d28c4c22ec3c385ec8aa5d05c079",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-601_codeql_1.py",
+      "declared_cwe": 601,
+      "source_sha256": "5d5e70e69610c9b7c1feb7facbcaa0dcbd55c233ecdc13178591e324a0215b38",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-601_sonar_1.py",
+      "declared_cwe": 601,
+      "source_sha256": "4f4b047bf58a9fd2b103a1329272e086ac68572784363524ffa382eabec3e3d1",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-601_sonar_2.py",
+      "declared_cwe": 601,
+      "source_sha256": "e2f7587da0d625119ebba0dc1220006d9538b43d23a4e6ac07a435fa9614c56a",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-601_sonar_3.py",
+      "declared_cwe": 601,
+      "source_sha256": "64ec2bf4bfa28e84666955b34d9af28ef58b91eea8b462148472609182b90e28",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-601_sonar_4.py",
+      "declared_cwe": 601,
+      "source_sha256": "44c6127c3c1d68034e69cc5b22681387dc3e3163d2af217e969518f5c97713a6",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-605_author_1.py",
+      "declared_cwe": 605,
+      "source_sha256": "e0f657483f13b2365fc5a7aec110ed778d31cd78ac15b52316936ac3a24e4d07",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B104"
+      ]
+    },
+    {
+      "id": "CWE-611_author_1.py",
+      "declared_cwe": 611,
+      "source_sha256": "543d6c0d4e4d5c40b4aa1e90169086fbb5e94d5d035fc081db0d8eafc2cb356b",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-611_codeql_1.py",
+      "declared_cwe": 611,
+      "source_sha256": "f4be9f4365fe272a5e2a2451b7d4bc388c0c405416a024a7c0abe206eca7ee4c",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-611_sonar_1.py",
+      "declared_cwe": 611,
+      "source_sha256": "665e9a563e4d1abc836f201fa3e75641411f3ae3763460ac7e1a599368c64154",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-611_sonar_2.py",
+      "declared_cwe": 611,
+      "source_sha256": "d81eef1d658987d0acf12712319c21d0888212421825ebdbfe31439b72a720a4",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-611_sonar_3.py",
+      "declared_cwe": 611,
+      "source_sha256": "660cfecec84505cc070048776c0b0c5d261b3154f0a76c367ee79c3b76d5d2ed",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-611_sonar_4.py",
+      "declared_cwe": 611,
+      "source_sha256": "076e3753dde3d8a9df613964eb41833b475fe70b068121041aa1f39930537ad6",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B317",
+        "B406"
+      ]
+    },
+    {
+      "id": "CWE-641_sonar_1.py",
+      "declared_cwe": 641,
+      "source_sha256": "b73b0cdabfbf0546cfb638addd19baab96176ae9ad1b64a7c4193cae8e0419c6",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-643_codeql_1.py",
+      "declared_cwe": 643,
+      "source_sha256": "8259544499092a1db800c833dc6ec462ca9d37c24821ae6392e3573343e69892",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-643_sonar_1.py",
+      "declared_cwe": 643,
+      "source_sha256": "8a823b51d18d6a4dc3cbcd790fbd64d802a9c3cc24821097878e75ab2af743c6",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B314",
+        "B405"
+      ]
+    },
+    {
+      "id": "CWE-703_author_1.py",
+      "declared_cwe": 703,
+      "source_sha256": "c331281a273eab5ba15c59295273d6211886166afbff3eed0b404d02e5a3279a",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-703_author_2.py",
+      "declared_cwe": 703,
+      "source_sha256": "0bd956f4b297d550ad7fddd620bc743f00105cb420170cdf39121b11757487cf",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-703_author_3.py",
+      "declared_cwe": 703,
+      "source_sha256": "d68e92df377defef34146f74ed4031e9ac877f9aa5adf0a86410eafca969c950",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B101"
+      ]
+    },
+    {
+      "id": "CWE-730_author_1.py",
+      "declared_cwe": 730,
+      "source_sha256": "ce15eca8a39ee9e5468303e390b4604cbe1d309b7f1303f4b658cddea9827a74",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-730_codeql_1.py",
+      "declared_cwe": 730,
+      "source_sha256": "0b50da411cf2ca61b0bc40b545fab49c439eb01ac18e977df564be785cd17937",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-730_codeql_2.py",
+      "declared_cwe": 730,
+      "source_sha256": "b6167e6115e0f5d0f4386267d06116c05827b176708236c2427ed6f9a735a7b4",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-732_author_1.py",
+      "declared_cwe": 732,
+      "source_sha256": "fce30f293e94608eba33ca143b047b873da58fe4e3e1edc9c741a9a80f251f3d",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": true,
+      "ast_sensitive_call": true,
+      "ast_categories": [
+        "command",
+        "path"
+      ],
+      "bandit_rule_ids": [
+        "B103",
+        "B605",
+        "B607"
+      ]
+    },
+    {
+      "id": "CWE-759_mitre_1.py",
+      "declared_cwe": 759,
+      "source_sha256": "61878f56fcf6e5134d4d34ab0946271487b69e4ae92e90262e1b7dfcee3db26a",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B324"
+      ]
+    },
+    {
+      "id": "CWE-760_sonar_1.py",
+      "declared_cwe": 760,
+      "source_sha256": "e4c7c4adaaeff7c33552f2ff755a9c7b21ff71028e000fd884b9649b8107ca5f",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-776_codeql_1.py",
+      "declared_cwe": 776,
+      "source_sha256": "2fa98048c37629205f69b09527092fc53764f53bdbf9a8b7f6eca49743f3288f",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B314",
+        "B405"
+      ]
+    },
+    {
+      "id": "CWE-798_author_1.py",
+      "declared_cwe": 798,
+      "source_sha256": "b904344c3328a3b32bc10452ee4ad1ea093b83275c01ae9a2c7967dcbe33a0d0",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B106"
+      ]
+    },
+    {
+      "id": "CWE-798_codeql_1.py",
+      "declared_cwe": 798,
+      "source_sha256": "7980bfa5c49a90a3bfdc5757278c2f9f873029275042d5a2f4a6c6b8b5a269f5",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B105"
+      ]
+    },
+    {
+      "id": "CWE-827_sonar_1.py",
+      "declared_cwe": 827,
+      "source_sha256": "77daa75fd2ee8ba77359ff930385a5d462b9c24fdfc479f0514728b64d52f771",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-835_author_1.py",
+      "declared_cwe": 835,
+      "source_sha256": "a426c1292700f90c1afe370c4755ea19f3304c088705e6a85f2195ee15ef7dd5",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-841_mitre_1.py",
+      "declared_cwe": 841,
+      "source_sha256": "63a5c721d1936dec6c31e5f5adc190acd3d91d8ab3c9f76d541d6c4780596985",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-918_codeql_1.py",
+      "declared_cwe": 918,
+      "source_sha256": "717eb5d4ebead9f3f501628b0871c5f5536478243a79e64a272a150712962568",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B113"
+      ]
+    },
+    {
+      "id": "CWE-918_codeql_2.py",
+      "declared_cwe": 918,
+      "source_sha256": "241471b240b119037165847b59c0a671084c5075acd6cd202fc431aa955b2026",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": true,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": [
+        "B113"
+      ]
+    },
+    {
+      "id": "CWE-941_mitre_1.py",
+      "declared_cwe": 941,
+      "source_sha256": "b3f3e95a5a27a50cf5085e3965256eff3076c191593128e3430663f161ad011a",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    },
+    {
+      "id": "CWE-943_sonar_1.py",
+      "declared_cwe": 943,
+      "source_sha256": "5bf3f7f48e0f2c0e8e22c9b0fc6ba707b06e5ad2d9a42fa4da6803059a331865",
+      "syntax_valid": true,
+      "bandit_status": "ok",
+      "bandit_any_alert": false,
+      "bandit_exact_cwe_alert": false,
+      "ast_sensitive_call": false,
+      "ast_categories": [],
+      "bandit_rule_ids": []
+    }
+  ],
+  "limitations": [
+    "Static diagnostics only; zero target executions and zero LLM calls.",
+    "Any-alert and AST sink presence are not confirmed vulnerability detection.",
+    "Exact CWE matching misses parent/child relations and is diagnostic, not semantic correctness.",
+    "Upstream Insecure_code labels are used without independent validation.",
+    "No safe negatives: precision, false-positive rate and accuracy are undefined.",
+    "No official SecurityEval leaderboard score or full-harness dynamic score is claimed."
+  ]
+}

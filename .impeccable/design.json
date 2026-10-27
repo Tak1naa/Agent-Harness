@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T15:50:50.235872+00:00",
+  "title": "Design System: Harness 项目客户端",
+  "extensions": {
+    "source": "safety_harness/web_assets/client.css",
+    "mode": "operate",
+    "visualAuthority": "code-led; user-selected Operate",
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "沉稳绿",
+        "tonalRamp": [
+          "oklch(15% 0.0761 169.15)",
+          "oklch(27% 0.0761 169.15)",
+          "oklch(38% 0.0761 169.15)",
+          "oklch(50% 0.0761 169.15)",
+          "oklch(61% 0.0761 169.15)",
+          "oklch(73% 0.0761 169.15)",
+          "oklch(84% 0.0761 169.15)",
+          "oklch(95% 0.0761 169.15)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "深墨灰",
+        "tonalRamp": [
+          "oklch(15% 0.0046 174.11)",
+          "oklch(27% 0.0046 174.11)",
+          "oklch(38% 0.0046 174.11)",
+          "oklch(50% 0.0046 174.11)",
+          "oklch(61% 0.0046 174.11)",
+          "oklch(73% 0.0046 174.11)",
+          "oklch(84% 0.0046 174.11)",
+          "oklch(95% 0.0046 174.11)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "辅助灰",
+        "tonalRamp": [
+          "oklch(15% 0.0067 153.67)",
+          "oklch(27% 0.0067 153.67)",
+          "oklch(38% 0.0067 153.67)",
+          "oklch(50% 0.0067 153.67)",
+          "oklch(61% 0.0067 153.67)",
+          "oklch(73% 0.0067 153.67)",
+          "oklch(84% 0.0067 153.67)",
+          "oklch(95% 0.0067 153.67)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "纸白",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.00)",
+          "oklch(27% 0.0000 0.00)",
+          "oklch(38% 0.0000 0.00)",
+          "oklch(50% 0.0000 0.00)",
+          "oklch(61% 0.0000 0.00)",
+          "oklch(73% 0.0000 0.00)",
+          "oklch(84% 0.0000 0.00)",
+          "oklch(95% 0.0000 0.00)"
+        ]
+      },
+      "rail": {
+        "role": "neutral",
+        "displayName": "暖灰侧栏",
+        "tonalRamp": [
+          "oklch(15% 0.0040 106.47)",
+          "oklch(27% 0.0040 106.47)",
+          "oklch(38% 0.0040 106.47)",
+          "oklch(50% 0.0040 106.47)",
+          "oklch(61% 0.0040 106.47)",
+          "oklch(73% 0.0040 106.47)",
+          "oklch(84% 0.0040 106.47)",
+          "oklch(95% 0.0040 106.47)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "轻灰背景",
+        "tonalRamp": [
+          "oklch(15% 0.0026 106.45)",
+          "oklch(27% 0.0026 106.45)",
+          "oklch(38% 0.0026 106.45)",
+          "oklch(50% 0.0026 106.45)",
+          "oklch(61% 0.0026 106.45)",
+          "oklch(73% 0.0026 106.45)",
+          "oklch(84% 0.0026 106.45)",
+          "oklch(95% 0.0026 106.45)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "浅灰分隔",
+        "tonalRamp": [
+          "oklch(15% 0.0055 117.93)",
+          "oklch(27% 0.0055 117.93)",
+          "oklch(38% 0.0055 117.93)",
+          "oklch(50% 0.0055 117.93)",
+          "oklch(61% 0.0055 117.93)",
+          "oklch(73% 0.0055 117.93)",
+          "oklch(84% 0.0055 117.93)",
+          "oklch(95% 0.0055 117.93)"
+        ]
+      },
+      "selected": {
+        "role": "neutral",
+        "displayName": "会话选中灰绿",
+        "tonalRamp": [
+          "oklch(15% 0.0115 128.60)",
+          "oklch(27% 0.0115 128.60)",
+          "oklch(38% 0.0115 128.60)",
+          "oklch(50% 0.0115 128.60)",
+          "oklch(61% 0.0115 128.60)",
+          "oklch(73% 0.0115 128.60)",
+          "oklch(84% 0.0115 128.60)",
+          "oklch(95% 0.0115 128.60)"
+        ]
+      },
+      "diff-add": {
+        "role": "semantic",
+        "displayName": "新增浅绿",
+        "tonalRamp": [
+          "oklch(15% 0.0258 136.32)",
+          "oklch(27% 0.0258 136.32)",
+          "oklch(38% 0.0258 136.32)",
+          "oklch(50% 0.0258 136.32)",
+          "oklch(61% 0.0258 136.32)",
+          "oklch(73% 0.0258 136.32)",
+          "oklch(84% 0.0258 136.32)",
+          "oklch(95% 0.0258 136.32)"
+        ]
+      },
+      "diff-remove": {
+        "role": "semantic",
+        "displayName": "删除浅红",
+        "tonalRamp": [
+          "oklch(15% 0.0177 39.40)",
+          "oklch(27% 0.0177 39.40)",
+          "oklch(38% 0.0177 39.40)",
+          "oklch(50% 0.0177 39.40)",
+          "oklch(61% 0.0177 39.40)",
+          "oklch(73% 0.0177 39.40)",
+          "oklch(84% 0.0177 39.40)",
+          "oklch(95% 0.0177 39.40)"
+        ]
+      },
+      "focus": {
+        "role": "semantic",
+        "displayName": "焦点灰绿",
+        "tonalRamp": [
+          "oklch(15% 0.0607 165.54)",
+          "oklch(27% 0.0607 165.54)",
+          "oklch(38% 0.0607 165.54)",
+          "oklch(50% 0.0607 165.54)",
+          "oklch(61% 0.0607 165.54)",
+          "oklch(73% 0.0607 165.54)",
+          "oklch(84% 0.0607 165.54)",
+          "oklch(95% 0.0607 165.54)"
+        ]
+      }
+    },
+    "tonalRampNote": "Generated OKLCH preview ramps; not runtime tokens or approved UI variants.",
+    "typographyMeta": {
+      "headline": {
+        "displayName": "欢迎标题",
+        "purpose": "会话起始页标题；移动端23px。"
+      },
+      "body": {
+        "displayName": "系统中文正文",
+        "purpose": "根字号；组件按阅读任务覆盖。"
+      },
+      "message": {
+        "displayName": "聊天正文",
+        "purpose": "模型与用户消息。"
+      },
+      "label": {
+        "displayName": "辅助标签",
+        "purpose": "紧凑状态与过程标签。"
+      },
+      "code": {
+        "displayName": "文件与差异",
+        "purpose": "保持源文件和差异对齐。"
+      }
+    },
+    "shadows": [
+      {
+        "name": "composer",
+        "value": "0 3px 12px #1b291207",
+        "purpose": "输入容器轻微层次。"
+      },
+      {
+        "name": "inspector-overlay",
+        "value": "-6px 0 30px #25331912",
+        "purpose": "窄屏右侧覆盖面板。"
+      },
+      {
+        "name": "navigation-overlay",
+        "value": "5px 0 25px #25331918",
+        "purpose": "移动会话侧栏。"
+      }
+    ],
+    "motion": [
+      {
+        "name": "cursor",
+        "value": "1s steps(2) infinite",
+        "purpose": "流式光标与运行指示；50%帧opacity为.2。"
+      },
+      {
+        "name": "suggestion",
+        "value": "color .15s",
+        "purpose": "建议任务悬停。"
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation:none!important;transition:none!important",
+        "purpose": "prefers-reduced-motion:reduce。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1550px",
+        "query": "(min-width:1550px)"
+      },
+      {
+        "name": "inspector-overlay",
+        "value": "1180px",
+        "query": "(max-width:1180px)"
+      },
+      {
+        "name": "single-column",
+        "value": "650px",
+        "query": "(max-width:650px)"
+      }
+    ],
+    "surfaces": [
+      {
+        "route": "/",
+        "path": "safety_harness/web_assets/index.html",
+        "styles": "safety_harness/web_assets/client.css",
+        "purpose": "会话、文件、工具过程与修改审批；本设计规范的主surface。"
+      },
+      {
+        "route": "/research",
+        "path": "safety_harness/web_assets/research.html",
+        "styles": "safety_harness/web_assets/app.css",
+        "purpose": "独立辅助研究界面；保留既有统计、案例与任务布局，不继承客户端三栏断点。"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "常规按钮",
+      "kind": "button",
+      "refersTo": "button-default",
+      "html": "<button class=\"ds-button-default\">拒绝</button>",
+      "css": ".ds-button-default{font-family:\"Noto Sans CJK SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:11px;padding:7px 11px;border:1px solid #d9ded4;border-radius:6px;background:white;color:var(--ink,#282b2a);cursor:pointer;}.ds-button-default:hover{background:var(--soft,#f8f8f6);}.ds-button-default:focus-visible{outline:2px solid var(--focus,#6b9b86);outline-offset:3px;}.ds-button-default:disabled{opacity:.45;cursor:default;}"
+    },
+    {
+      "name": "应用修改",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "html": "<button class=\"ds-button-primary\">应用修改</button>",
+      "css": ".ds-button-primary{font-family:\"Noto Sans CJK SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:11px;padding:7px 11px;border:1px solid var(--accent,#266954);border-radius:6px;background:var(--accent,#266954);color:white;cursor:pointer;}.ds-button-primary:hover{background:var(--soft,#f8f8f6);}.ds-button-primary:hover{background:var(--accent,#266954);}.ds-button-primary:focus-visible{outline:2px solid var(--focus,#6b9b86);outline-offset:3px;}.ds-button-primary:disabled{opacity:.45;cursor:default;}"
+    },
+    {
+      "name": "文件搜索",
+      "kind": "input",
+      "refersTo": "file-search",
+      "html": "<input class=\"ds-file-search\" type=\"search\" aria-label=\"搜索项目文件\" placeholder=\"搜索项目文件…\">",
+      "css": ".ds-file-search{font-family:\"Noto Sans CJK SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif;width:100%;font-size:11px;border:1px solid #dfe5d7;background:#f5f7f1;border-radius:6px;padding:8px 11px;color:var(--ink,#282b2a);}.ds-file-search:focus-visible{outline:2px solid var(--focus,#6b9b86);outline-offset:3px;outline-offset:1px;}"
+    },
+    {
+      "name": "会话导航",
+      "kind": "nav",
+      "refersTo": "session-selected",
+      "html": "<button class=\"ds-session\"><strong>阅读项目执行流程</strong><small>任务完成 · 14:30</small></button>",
+      "css": ".ds-session{font-family:\"Noto Sans CJK SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif;display:block;width:100%;padding:10px 12px;border:0;background:var(--selected,#e3e7df);border-radius:7px;text-align:left;color:var(--ink,#282b2a);cursor:pointer;}.ds-session strong{display:block;font-size:12px;font-weight:500;}.ds-session small{font-size:10px;color:var(--muted,#6c706d);}.ds-session:hover{background:#e8ebe4;}.ds-session:focus-visible{outline:2px solid var(--focus,#6b9b86);outline-offset:3px;}"
+    },
+    {
+      "name": "引用文件标签",
+      "kind": "chip",
+      "refersTo": "composer",
+      "html": "<span class=\"ds-attachment\"><span>README.md</span><button aria-label=\"移除引用 README.md\">移除</button></span>",
+      "css": ".ds-attachment{font-family:\"Noto Sans CJK SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif;display:inline-flex;gap:6px;align-items:center;font-size:10px;border:1px solid #d8dfd0;background:#f3f7ee;border-radius:5px;padding:4px 7px;color:var(--ink,#282b2a);}.ds-attachment button{font-family:\"Noto Sans CJK SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif;border:0;background:transparent;color:#6c7861;font-size:10px;cursor:pointer;}.ds-attachment button:focus-visible{outline:2px solid var(--focus,#6b9b86);outline-offset:3px;}"
+    },
+    {
+      "name": "工具过程记录",
+      "kind": "card",
+      "refersTo": "tool-message",
+      "html": "<details class=\"ds-tool\"><summary><span>读取文件</span><span class=\"ds-tool-state\">已返回</span></summary><pre>{\"path\":\"README.md\"}</pre></details>",
+      "css": ".ds-tool{font-family:\"Noto Sans CJK SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif;border:1px solid #e1e6db;border-radius:7px;font-size:11px;background:#fafbf8;color:var(--ink,#282b2a);}.ds-tool summary{display:flex;align-items:center;gap:9px;cursor:pointer;padding:9px 12px;list-style:none;}.ds-tool summary:before{content:\"\";width:6px;height:6px;background:#6d8d6a;border-radius:2px;}.ds-tool-state{margin-left:auto;color:#5b6753;font-size:9px;}.ds-tool summary:focus-visible{outline:2px solid var(--focus,#6b9b86);outline-offset:3px;}.ds-tool pre{border-top:1px solid #e4e8dd;margin:0;padding:12px;white-space:pre-wrap;overflow:auto;max-height:300px;font:10px/1.8 ui-monospace,monospace;color:#637357;}"
+    },
+    {
+      "name": "任务输入",
+      "kind": "custom",
+      "refersTo": "composer",
+      "html": "<div class=\"ds-composer\"><textarea aria-label=\"给 Agent 的任务\" placeholder=\"描述任务，或从右侧引用一个文件…\"></textarea></div>",
+      "css": ".ds-composer{border:1px solid #dce1d6;border-radius:14px;background:#fafbf8;box-shadow:0 3px 12px #1b291207;}.ds-composer:focus-within{border-color:#8aa48a;}.ds-composer textarea{font-family:\"Noto Sans CJK SC\",\"PingFang SC\",\"Microsoft YaHei\",system-ui,sans-serif;display:block;border:0;background:transparent;resize:none;padding:17px 18px 8px;width:100%;box-sizing:border-box;min-height:91px;max-height:200px;outline:none;font-size:12px;line-height:1.8;color:var(--ink,#282b2a);}.ds-composer textarea::placeholder{color:#5b6753;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Operate · 项目会话台",
+    "overview": "用户选择的 Operate 方向以代码工作为依据：清楚的会话层级、可展开的工具过程、明确的修改决策。浅色中性底与克制的绿色强调建立安静的阅读环境，界面密度服务于持续操作。\n\n设计依据当前客户端源码提取。主要通过细边框、浅底色与位置区分区域，有限阴影用于输入区和覆盖式面板。中文采用本机系统字体，代码采用等宽字体，不依赖外部字体资源。",
+    "keyCharacteristics": [
+      "会话和任务输入构成视觉主轴。",
+      "工具结果与修改差异可逐项检查。",
+      "系统中文字体、浅色中性层级和少量绿色强调。"
+    ],
+    "rules": [],
+    "dos": [
+      "Do 保留选中、运行、失败、待确认和中断的文字状态。",
+      "Do 将代码、参数与差异放入可滚动的等宽阅读区。",
+      "Do 在窄屏通过可开合侧栏保留文件引用与审批入口。"
+    ],
+    "donts": [
+      "Don't 用研究统计卡片代替会话首页。",
+      "Don't 仅依靠颜色表达工具结果或审批状态。",
+      "Don't 将研究页的排版、断点或图表规则套到会话客户端。"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harness · 安全测试工作台</title>
+  <link rel="stylesheet" href="/assets/app.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark">H</span><span>Harness<small>安全测试研究工作台</small></span></a>
+    <nav aria-label="主要导航">
+      <button class="nav active" data-view="overview" aria-current="page"><span>评测总览</span><small>结果与证据</small></button>
+      <button class="nav" data-view="workbench"><span>案例工作台</span><small>分析与隔离复现</small></button>
+      <button class="nav" data-view="experiments"><span>实验任务</span><small>运行 A / B / C 对照</small></button>
+    </nav>
+    <div class="sidebar-bottom"><strong>Python 安全测试</strong><p>路径穿越 · 命令注入 · SQL 注入</p><div class="rule"></div><span id="key-state">正在连接工作台…</span><p class="quiet">模型调用在容器外完成<br>测试在独立无网络容器中执行</p></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div>Agent-Harness <span class="slash">/</span> <span id="breadcrumb">评测总览</span></div><div class="top-actions"><span class="local-label">本机工作区</span><button class="button small" id="check-env">检查运行环境</button></div></header>
+    <div id="notice" role="alert" hidden></div>
+    <main id="main" tabindex="-1">
+      <section id="view-overview" class="view">
+        <div class="page-title"><div><h1>评测总览</h1><p>从复现结果回到测试代码，每一个结论都有执行记录。</p></div><label class="select-label">评测批次<select id="run-select" aria-label="评测批次"><option>正在加载…</option></select></label></div>
+        <div id="overview-loading" class="empty">正在读取本地评测记录…</div>
+        <div id="overview-data" hidden>
+          <div class="summary-strip" id="summary-strip"></div>
+          <div class="overview-grid">
+            <article class="panel chart-panel"><div class="panel-heading"><h2>三种方法的配对复现率</h2><span class="tag">受控样本</span></div><p class="muted">同一测试在缺陷版触发违规，并在修复版通过。</p><div id="comparison"></div><p id="comparison-note" class="footnote"></p></article>
+            <article class="panel evidence-panel"><h2>这份结果说明了什么</h2><p id="finding" class="finding"></p><dl id="evidence-facts"></dl><button class="text-button" id="export-summary">下载本批次统计 JSON</button></article>
+          </div>
+          <section class="panel sample-panel"><div class="panel-heading"><div><h2>逐样本结果</h2><p class="muted">点击任一组的结果，查看生成测试与原始执行证据。此表保留全量试验。</p></div><label class="sr-only" for="result-filter">按漏洞类型筛选</label><select id="result-filter"><option value="all">全部类型</option><option value="path">路径穿越</option><option value="command">命令注入</option><option value="sql">SQL 注入</option></select></div><div class="table-scroll"><table><thead><tr><th>样本</th><th>类型</th><th>A · 直接生成</th><th>B · 告警引导</th><th>C · 上下文引导</th></tr></thead><tbody id="result-rows"></tbody></table></div></section>
+          <section id="trial-detail" class="panel" hidden aria-live="polite"></section>
+          <section id="external-result" class="external-panel" hidden></section>
+          <p class="footnote">人工构造样本用于方法对照，不代表真实项目的普遍检出率。不同批次与静态分析结果不合并分母。</p>
+        </div>
+      </section>
+
+      <section id="view-workbench" class="view" hidden>
+        <div class="page-title"><div><h1>案例工作台</h1><p>选择一个样本，查看代码、定位风险，再验证缺陷与修复。</p></div><span class="tag">参考 / 手写测试验证</span></div>
+        <div class="workbench-grid">
+          <aside class="case-browser"><label for="case-search">查找样本</label><input id="case-search" placeholder="例如 path-01" type="search"><label class="sr-only" for="case-filter">样本类型</label><select id="case-filter"><option value="all">全部类型 · 30 对</option><option value="path">路径穿越</option><option value="command">命令注入</option><option value="sql">SQL 注入</option></select><div id="case-list" class="case-list"></div></aside>
+          <div class="case-content">
+            <div class="case-heading"><div><h2 id="case-title">选择一个样本</h2><p id="case-meta" class="muted"></p></div><span id="case-split" class="tag"></span></div>
+            <p id="case-requirement" class="requirement"></p>
+            <div class="code-panel"><div class="code-toolbar"><div class="tabs" aria-label="源码版本"><button class="tab active" data-source="buggy.py">缺陷版</button><button class="tab" data-source="fixed.py">修复版</button><button class="tab" data-source="reference.py">参考测试</button></div><span id="code-filename">buggy.py</span></div><pre id="source-code" tabindex="0"></pre></div>
+            <div class="action-row"><button class="button" id="analyze-case">分析缺陷版</button><button class="button primary" id="run-case">隔离运行配对测试</button></div>
+            <details class="custom-test"><summary>编辑本次测试输入</summary><p class="muted">默认使用参考测试。可在下方修改 probe.check 输入；修改只用于本次运行，不覆盖样本。</p><label class="sr-only" for="harness-editor">本次测试代码</label><textarea id="harness-editor" spellcheck="false" rows="7"></textarea><button class="text-button" id="reset-harness">恢复参考测试</button></details>
+            <div id="case-job-status" class="job-inline" role="status" hidden></div>
+            <section id="case-result" class="panel" hidden aria-live="polite"></section>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-experiments" class="view" hidden>
+        <div class="page-title"><div><h1>实验任务</h1><p>使用同一模型和调用上限，运行可追溯的 A / B / C 对照。</p></div><button class="button small" id="refresh-jobs">刷新任务</button></div>
+        <div class="experiment-grid"><form class="panel" id="experiment-form"><h2>新建对照实验</h2><p class="muted">deepseek-flash · 非思考模式 · 1 次重复</p><label for="split-select">样本范围</label><select id="split-select"><option value="dev">开发集 · 6 对样本 · 18 次试验</option><option value="eval">评测集 · 24 对样本 · 72 次试验</option></select><div class="form-row"><label>输入价格<small>元 / 百万 Token</small><input id="input-price" type="number" min="0.001" max="100" step="any" value="2" required></label><label>输出价格<small>元 / 百万 Token</small><input id="output-price" type="number" min="0.001" max="200" step="any" value="8" required></label></div><label for="budget">共享账本总预算上限（元）</label><input id="budget" type="number" min="0.01" max="100" step="any" value="100" required><p id="budget-note" class="footnote"></p><p class="footnote">价格为 2026-10-25 核对的高峰保守价格，请按实际价格调整。每个试验最多生成一次、修订两次；网络失败会停止本批次，不自动重试。</p><button class="button primary" id="start-experiment" type="submit">调用模型并开始实验</button></form>
+          <section class="protocol"><h2>实验如何进行</h2><ol class="pipeline"><li><strong>静态分析</strong><span>读取源码，提取 Bandit 告警与 AST 函数上下文。</span></li><li><strong>模型生成测试</strong><span>A 直接生成；B 加入告警；C 再加入风险上下文。</span></li><li><strong>隔离执行与反馈</strong><span>只反馈缺陷版执行情况，模型最多修订两次。</span></li><li><strong>配对验证</strong><span>同一测试运行修复版，记录违规、错误与用量。</span></li></ol><p class="footnote">新任务保存到独立目录。密钥在服务器端读取，不传入测试容器。切换页面不会中止任务。</p></section>
+        </div>
+        <section class="panel"><div class="panel-heading"><h2>任务记录</h2><span id="jobs-count" class="muted"></span></div><div id="jobs-list" class="jobs-list"><p class="empty">尚未从网页运行任务。可以先在案例工作台复现一个样本。</p></div></section>
+        <section id="job-detail" class="panel" hidden aria-live="polite"></section>
+      </section>
+    </main>
+    <footer>基于程序分析的代码智能体安全性测试 Harness <span>研究原型 · 结论以执行证据为准</span></footer>
+  </div>
+</div>
+</body>
+</html>

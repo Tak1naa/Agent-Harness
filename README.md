@@ -2,6 +2,16 @@
 
 面向大创中期的研究原型。研究问题：相同模型、工具和调用上限下，Bandit 告警与 AST 函数上下文能否提高 Python 安全测试的有效性？原始 `react_agent_deepseek.py` 保留为探索记录，不用作隔离或漏洞判定。
 
+## 会话客户端
+
+完成下方依赖安装后，执行 `bash scripts/start_web.sh`，打开 <http://127.0.0.1:8765/>。
+左侧管理会话，中间给 Agent 下任务，右侧查看文件、工具记录和修改差异；修改需点击确认才能写入。
+已接通 DeepSeek 流式对话、真实静态分析和容器配对测试。研究统计在侧栏“研究与评测”中。
+
+这是本项目有界 Agent 的浏览器客户端，不是官方 DeepSeek Harness SDK 会话或原生桌面安装包。
+密钥仍在 `.env` 中配置；不提供宿主机 Shell，动态目标只在原有隔离容器中运行。
+启动、操作、预算和能力边界见[客户端使用](docs/客户端使用.md)。
+
 ## 已完成与待完成
 
 - 已实现：Bandit/AST 分析、受限 pytest/Hypothesis 测试语法、rootless Podman 执行、真实副作用判据、JSON/CSV、CLI、MCP stdio、预算与断点续跑。
@@ -10,7 +20,7 @@
 - 已开展：真实 API 的开发集 A/B/C 小批量试验，原始日志分别保存于 `results/private/pilot-20261022` 和 `results/private/pilot-20261022-v2`；不同开发轮次不得合并为正式评测。
 - 冻结评测已完成：216次全量试验，A/B/C分别62/72、63/72、68/72配对复现。7次网络失败保守计入调用上限，排除3个超上限匹配块后，主要比较为61/69、62/69、67/69。证据链和冻结源码哈希核验通过；小样本描述性结果不代表普遍提升。
 - 已生成12份不同正常需求的真实模型输出，全部保留；动态执行、正常功能验收、双人独立标签、真人计时仍待完成。
-- 最新材料为`deliverables/*-20261022.*`。不带日期的报告/PPT及旧ZIP保留为2026-10-21工程验证快照。正式统计见`results/frozen-20261022/analysis.json`，参考文献见`docs/参考文献与阅读顺序.md`。
+- 最新材料位于 [`deliverables/中期答辩-20261027/`](deliverables/中期答辩-20261027/)：7页五分钟答辩PPT、6页中期报告、逐页讲稿及展示方案，不含视频。2026-10-22材料及不带日期的早期材料保留为历史快照；应按日期区分实验口径。冻结统计见`results/frozen-20261022/analysis.json`，参考文献见`docs/参考文献与阅读顺序.md`。
 
 ## 安装与无 Key 验证
 
@@ -96,3 +106,9 @@ chmod 600 .env
 ## 中文注释阅读入口
 
 先读`safety_harness/experiment.py`了解总流程，再读`analyze.py`、`prompts.py`和`model.py`了解模型获得的信息。`runner.py`负责隔离运行，`containers/worker.py`负责容器内测试，`containers/security_probe.py`解释三类违规如何取证。`policy.py`说明模型生成的测试为什么只能使用受限语法。
+
+## Benchmark 试跑（2026-10-25）
+
+新增一轮24个受控评测样本 × A/B/C × 1次重复：配对复现分别为20/24、22/24、22/24；不与2026-10-22三次重复的冻结批次混算。这次C组未比B组多复现样本。另在固定版本SecurityEval的121份原始代码上完成静态诊断，Bandit有告警48份，联合AST有线索53份；这不是公开集上的动态漏洞检出率或排行榜分数。
+
+结果和限制见[本轮结果](results/benchmark-20261025/README.md)，复跑及计分方法见[benchmark说明](docs/benchmark.md)。原始输出位于忽略目录`results/private/benchmark-20261025`及`results/private/securityeval-static-20261025`。

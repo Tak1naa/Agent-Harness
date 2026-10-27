@@ -1,0 +1,288 @@
+{
+  "kind": "controlled_benchmark",
+  "full_summary": {
+    "schema_version": 1,
+    "records": 72,
+    "groups": [
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "A",
+        "denominator": 24,
+        "confirmed": 20,
+        "runnable": 23,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 20,
+          "pass": 3,
+          "harness_error": 1
+        },
+        "coverage_denominator": 5,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 113.7409,
+        "prompt_tokens": 27938,
+        "completion_tokens": 6855,
+        "model_duration_seconds": 48.52520531600749,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 24,
+        "negative_denominator": 24,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.8333333333333334,
+        "runnable_rate": 0.9583333333333334,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 24,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      },
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "B",
+        "denominator": 24,
+        "confirmed": 22,
+        "runnable": 24,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 22,
+          "pass": 2
+        },
+        "coverage_denominator": 5,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 113.4691,
+        "prompt_tokens": 26842,
+        "completion_tokens": 7050,
+        "model_duration_seconds": 48.930235092993826,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 24,
+        "negative_denominator": 24,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.9166666666666666,
+        "runnable_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 24,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      },
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "C",
+        "denominator": 24,
+        "confirmed": 22,
+        "runnable": 24,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 22,
+          "pass": 2
+        },
+        "coverage_denominator": 5,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 113.0492,
+        "prompt_tokens": 36765,
+        "completion_tokens": 7366,
+        "model_duration_seconds": 53.01368213596288,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 24,
+        "negative_denominator": 24,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.9166666666666666,
+        "runnable_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 24,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      }
+    ],
+    "complete_abc_blocks": 24,
+    "note": "Reference validation is engineering evidence, not model-generated A/B/C results."
+  },
+  "within_budget_summary": {
+    "schema_version": 1,
+    "records": 72,
+    "groups": [
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "A",
+        "denominator": 24,
+        "confirmed": 20,
+        "runnable": 23,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 20,
+          "pass": 3,
+          "harness_error": 1
+        },
+        "coverage_denominator": 5,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 113.7409,
+        "prompt_tokens": 27938,
+        "completion_tokens": 6855,
+        "model_duration_seconds": 48.52520531600749,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 24,
+        "negative_denominator": 24,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.8333333333333334,
+        "runnable_rate": 0.9583333333333334,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 24,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      },
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "B",
+        "denominator": 24,
+        "confirmed": 22,
+        "runnable": 24,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 22,
+          "pass": 2
+        },
+        "coverage_denominator": 5,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 113.4691,
+        "prompt_tokens": 26842,
+        "completion_tokens": 7050,
+        "model_duration_seconds": 48.930235092993826,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 24,
+        "negative_denominator": 24,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.9166666666666666,
+        "runnable_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 24,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      },
+      {
+        "kind": "model_experiment",
+        "dataset": "controlled",
+        "split": "eval",
+        "group": "C",
+        "denominator": 24,
+        "confirmed": 22,
+        "runnable": 24,
+        "false_positives": 0,
+        "statuses": {
+          "violation": 22,
+          "pass": 2
+        },
+        "coverage_denominator": 5,
+        "mean_branch_coverage": 0.8,
+        "duration_seconds": 113.0492,
+        "prompt_tokens": 36765,
+        "completion_tokens": 7366,
+        "model_duration_seconds": 53.01368213596288,
+        "missing_model_timing": 0,
+        "missing_token_usage": 0,
+        "positive_denominator": 24,
+        "negative_denominator": 24,
+        "unknown_labels": 0,
+        "candidate_violations": 0,
+        "confirmed_rate": 0.9166666666666666,
+        "runnable_rate": 1.0,
+        "false_positive_rate": 0.0,
+        "negative_valid_evaluations": 24,
+        "negative_unresolved": 0,
+        "observed_false_positive_rate": 0.0
+      }
+    ],
+    "complete_abc_blocks": 24,
+    "note": "Reference validation is engineering evidence, not model-generated A/B/C results."
+  },
+  "excluded_matched_blocks": [],
+  "transport_events": [
+    {
+      "trial": "sql-03-0-B",
+      "ambiguous_requests": 1,
+      "timestamp": "2026-10-25T04:47:13.917352+00:00",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 1
+      }
+    },
+    {
+      "trial": "command-03-0-A",
+      "ambiguous_requests": 1,
+      "timestamp": "2026-10-25T04:52:22.443011+00:00",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 0
+      }
+    },
+    {
+      "trial": "path-03-0-C",
+      "ambiguous_requests": 1,
+      "timestamp": "2026-10-25T04:53:39.595091+00:00",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 0
+      }
+    },
+    {
+      "trial": "path-05-0-B",
+      "ambiguous_requests": 1,
+      "timestamp": "2026-10-25T04:54:48.328658+00:00",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 0
+      }
+    },
+    {
+      "trial": "command-05-0-A",
+      "ambiguous_requests": 1,
+      "timestamp": "2026-10-25T04:57:51.199240+00:00",
+      "failure": {
+        "reason": "API transport failure: ConnectTimeout",
+        "completed_attempts": 0
+      }
+    }
+  ],
+  "ambiguous_requests": 5,
+  "retry_policy": "Keep all transport failures as ambiguous requests. Report full results and exclude entire A/B/C blocks exceeding three conservative requests in sensitivity summary. Policy recorded after first timeout, before resuming.",
+  "api_responses": 107,
+  "returned_models": {
+    "deepseek-flash": 107
+  },
+  "usage": {
+    "prompt_tokens": 91545,
+    "completion_tokens": 21271,
+    "prompt_cache_hit_tokens": 62453,
+    "prompt_cache_miss_tokens": 29092
+  },
+  "usage_cost_upper_cny": 0.353258,
+  "cost_note": "Upper estimate from documented peak rates with all input treated uncached; actual platform billing can be lower. Failed requests absent from responses remain charged to shared reservation ledger.",
+  "shared_ledger_reservations_delta": 112,
+  "shared_ledger_reserved_delta_cny": 2.5400220000000058,
+  "ledger_note": "Shared ledger delta assumes no unrelated concurrent API runs; reservation is not actual spend.",
+  "evidence_verification": {
+    "kind": "evidence_verification",
+    "status": "passed",
+    "expected_trials": 72,
+    "observed_trials": 72,
+    "responses_checked": 107,
+    "errors": [],
+    "scope": "Saved response/test identity, usage, executed target/image hashes, paired verdicts, and buggy-only revision feedback. Not an independent security-oracle review."
+  },
+  "limitations": "24 synthetic template variants; one repetition; descriptive comparison, not public leaderboard performance or statistical significance."
+}
