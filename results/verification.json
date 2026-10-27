@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-10-21T10:26:29.124242+00:00",
+  "dataset": {
+    "status": "passed",
+    "pairs": 30,
+    "development": 6,
+    "evaluation": 24
+  },
+  "reference_pairs": 30,
+  "reference_confirmed": 30,
+  "reference_fixed_violations": 0,
+  "server_representative_pairs": 3,
+  "server_confirmed": 3,
+  "tests": {
+    "unit-tests": {
+      "tests": "21",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "2.912"
+    },
+    "container-tests": {
+      "tests": "5",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "103.998"
+    }
+  },
+  "dsh": {
+    "status": "initialized",
+    "sdk": "0.2.1rc2",
+    "mcp_startup_fail_closed": true,
+    "model_turn": "not_run",
+    "api_requests": 0
+  },
+  "real_model_experiment": "not_run_key_intentionally_empty",
+  "human_label_review": "pending",
+  "human_rehearsal": "pending",
+  "scope": "Engineering verification only; not model effectiveness."
+}

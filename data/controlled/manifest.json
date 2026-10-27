@@ -1,0 +1,515 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "path-01",
+      "category": "path",
+      "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+      "contract": "handle(value: str, root: str)",
+      "split": "dev",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "9c4e7c5ec24a7fc02632ba8ae8457a1fe8b04b0af0613f4b1b1adae12b99d554",
+        "fixed.py": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+        "reference.py": "fa656cbfa6e4099f7b21dc243772b071ef0e5513dc71144f63a71302a48ebcb0",
+        "task.json": "9f90d4fbffce9eb49c4f553fd211c7270bf5443dc64b89a15c335050ef59812b"
+      }
+    },
+    {
+      "id": "path-02",
+      "category": "path",
+      "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+      "contract": "handle(value: str, root: str)",
+      "split": "dev",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "a5e964a103e8c63dc65de5aebf6416f71b1961f386e2e423156610667e88fcd4",
+        "fixed.py": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+        "reference.py": "fa656cbfa6e4099f7b21dc243772b071ef0e5513dc71144f63a71302a48ebcb0",
+        "task.json": "55c1e8e30a2105c0e148c85ddd4b351eafb1c2396df6935ef20f81702ac65cd8"
+      }
+    },
+    {
+      "id": "path-03",
+      "category": "path",
+      "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "3dec1d51c3942bd13a6261d25bec21cd32c9791ac3424a9b6951743b7c575ca3",
+        "fixed.py": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+        "reference.py": "fa656cbfa6e4099f7b21dc243772b071ef0e5513dc71144f63a71302a48ebcb0",
+        "task.json": "514b672f080fbddfa959cdbfe6f4ad44066390d40d0bb8c015e3f9c62608871c"
+      }
+    },
+    {
+      "id": "path-04",
+      "category": "path",
+      "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "c0c4449307c5f6eec031b4cffb8caceb1e162208c8194bdbd5f1c25bf54b0a5b",
+        "fixed.py": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+        "reference.py": "580259ec9b31f69c82a2e1154640548ebf5447f7db9a69b1c62e91a88f091f85",
+        "task.json": "f1bb04c121d04c8d926249d7e7364567cb3bbb6ac1ab15da5cf71c8f6da92c8e"
+      }
+    },
+    {
+      "id": "path-05",
+      "category": "path",
+      "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "b63f24bcbf26131924be84cb8122e1c1f3d06a5e3c7bb40c4368cfb2f22ca337",
+        "fixed.py": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+        "reference.py": "a1ac1e21665b7a145cbff3057a202daa77128f5a86e47540ce184e4cf5d159f5",
+        "task.json": "ca6a74dc3dba12b96efa09e87b7d6f839113f3ce72e1557d7ee9d7e3c42f3226"
+      }
+    },
+    {
+      "id": "path-06",
+      "category": "path",
+      "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "3b7827e31cac18efd079576246eb62c120fe81942a9bb88c3ea7fa6fd2039ebd",
+        "fixed.py": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+        "reference.py": "fa656cbfa6e4099f7b21dc243772b071ef0e5513dc71144f63a71302a48ebcb0",
+        "task.json": "8f672c5fdffe261d7b70addebd74e1b1ce245c2f7a95b80702cb1ee21df03055"
+      }
+    },
+    {
+      "id": "path-07",
+      "category": "path",
+      "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "d6e6faf1abffc283983cd5a4438578c1bbaccc01fb1afe55ee748f9a6141b5b1",
+        "fixed.py": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+        "reference.py": "bf2e49fea92f48b62291a78cb0cf937e440a9b45c056573868df7ffb9a2c0925",
+        "task.json": "dae025c40dd520c609938cc5e342ea5be55dd1ff8c58e02ef0b15b646e7201dc"
+      }
+    },
+    {
+      "id": "path-08",
+      "category": "path",
+      "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "f2a7110948d960d79d5b2f7483a889c6621c36146076b37a1a4f14b723f27c5e",
+        "fixed.py": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+        "reference.py": "a1ac1e21665b7a145cbff3057a202daa77128f5a86e47540ce184e4cf5d159f5",
+        "task.json": "d66dad42c3bbdce35bbb7657328dade1c8e86a1e031f0a14ebee4bc55a2883ea"
+      }
+    },
+    {
+      "id": "path-09",
+      "category": "path",
+      "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "eeb19359e9f84c6b0eea578fb263c1e30f517b9772036e0504b596313af2e859",
+        "fixed.py": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+        "reference.py": "fa656cbfa6e4099f7b21dc243772b071ef0e5513dc71144f63a71302a48ebcb0",
+        "task.json": "2c53c3bb01dd0a4cff1ee5427cf79f511a415f5a35b11af9beed70ce0a4e9a0f"
+      }
+    },
+    {
+      "id": "path-10",
+      "category": "path",
+      "requirement": "Read a UTF-8 .txt resource under root, rejecting access outside root. Public file: hello.txt.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "83800fcddc4476db730fb06e2b71ea6e00809923481e522721a63ec93b8874ae",
+        "fixed.py": "931af6b25792ff51973ddf3c612f9b20c2ff0ef0989ea1efeb8458661567abd2",
+        "reference.py": "3b68e727cd9d59c949b9917bcb0e0b95fddedf3f3f1e82ef47d30819340afa3e",
+        "task.json": "a8f53c3faa4272178339e530f6b8fb676415256554c9b41b0a51be579ba64b19"
+      }
+    },
+    {
+      "id": "command-01",
+      "category": "command",
+      "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+      "contract": "handle(value: str, root: str)",
+      "split": "dev",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "5844c92758b6efa58a7f6b65b94f572a204ebe366abcbb81b729f3577fbeedc3",
+        "fixed.py": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+        "reference.py": "1d40ecae100560887629b5d65021678d7b8f54a4504e14a17975d0a0fe5e2413",
+        "task.json": "b4258af10d696a1501fb8780f884ac4027e8536e63b92168c0b8cc312deba077"
+      }
+    },
+    {
+      "id": "command-02",
+      "category": "command",
+      "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+      "contract": "handle(value: str, root: str)",
+      "split": "dev",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "db4239eb2965a23516be71a684ebbfe75e29676b82953001736dced1f765ae83",
+        "fixed.py": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+        "reference.py": "1d40ecae100560887629b5d65021678d7b8f54a4504e14a17975d0a0fe5e2413",
+        "task.json": "aab1dd6582e94adaa400d8d85863205677ad58653d40162be6eae299ce4c4083"
+      }
+    },
+    {
+      "id": "command-03",
+      "category": "command",
+      "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "f47ec38b58dad8fc74637560f64e84bb3485edda06e4c30072cfcf5ed3677ba3",
+        "fixed.py": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+        "reference.py": "1d40ecae100560887629b5d65021678d7b8f54a4504e14a17975d0a0fe5e2413",
+        "task.json": "ca1ddd6e21275bee50dfefc1b4c021241f5ecf2c746f22814cdc21541b432991"
+      }
+    },
+    {
+      "id": "command-04",
+      "category": "command",
+      "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "62c5b665b035a0bdc31d09533943171c29535e5fe0e460f5a93325a154a401d0",
+        "fixed.py": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+        "reference.py": "1d40ecae100560887629b5d65021678d7b8f54a4504e14a17975d0a0fe5e2413",
+        "task.json": "c3fabb209f31da522018ad8605268c41242d610e17272bf05f245151093fa737"
+      }
+    },
+    {
+      "id": "command-05",
+      "category": "command",
+      "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "0576bf97e712c40676f7580050642bd209aaa7ea7b6442a87723a778a76ef3cc",
+        "fixed.py": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+        "reference.py": "1d40ecae100560887629b5d65021678d7b8f54a4504e14a17975d0a0fe5e2413",
+        "task.json": "2353c75876be56031d2040b6ecb968e6fa79eba2dd78a3aaf5c0ab6d7c584806"
+      }
+    },
+    {
+      "id": "command-06",
+      "category": "command",
+      "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "c07156266c98887548e5f74a92e46b16f1bcbc5b8f4ac0dd527be23c598a49f6",
+        "fixed.py": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+        "reference.py": "2600f66723015653d5eb8f9fc75f7f70846cc0c4b3c3ace50c114535548d6c53",
+        "task.json": "d0d2713a93bb7d2b9efb370643b693dfeee2951c86d04a3e0adf347786beda3f"
+      }
+    },
+    {
+      "id": "command-07",
+      "category": "command",
+      "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "64894d2fced70b606e828ba927044aba147109d7fab37415ce83387eecac1430",
+        "fixed.py": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+        "reference.py": "ccbb1a2894dd940d9923f52efcee2b1b95558b20bbf272b81cec0b725b8b2013",
+        "task.json": "cd964b0a4e301d8b630fe86c05fb35044b2079d7eece79ee912e27bebf04597e"
+      }
+    },
+    {
+      "id": "command-08",
+      "category": "command",
+      "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "f2f1b27d11ee4fed10d57c85f58a9f65653d96d41c213107e7ed57d67357ab03",
+        "fixed.py": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+        "reference.py": "2600f66723015653d5eb8f9fc75f7f70846cc0c4b3c3ace50c114535548d6c53",
+        "task.json": "8dadbc0ec5a203348d679717eba2c006526db5039374e4df945c51f4515ad19c"
+      }
+    },
+    {
+      "id": "command-09",
+      "category": "command",
+      "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "b07493588951f05c74be238cd15e6e677ce057ecdd27d1dbc92950853998b31b",
+        "fixed.py": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+        "reference.py": "1d40ecae100560887629b5d65021678d7b8f54a4504e14a17975d0a0fe5e2413",
+        "task.json": "4fa63b835a8f555ad2d3ef70a1ce8ecb421193a5892bab803dfe9e796eb65e0a"
+      }
+    },
+    {
+      "id": "command-10",
+      "category": "command",
+      "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "639ef48928cc1749f772a8cdf4bced300c6a89674c39a0807400cc8d6acafca3",
+        "fixed.py": "2b02a6efd332ef9fc5298edc6eeda7aa9499b87e5e9868a043c1367d1bb72ac5",
+        "reference.py": "b5c664944d36970025c6f0171511f1dcb56dd0bce4d242db6a895579198ded38",
+        "task.json": "6978c2dc46188a8e23ad4c5b98ff791ed30c48d0f6a8888ab67cc07f60e27036"
+      }
+    },
+    {
+      "id": "sql-01",
+      "category": "sql",
+      "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+      "contract": "handle(value: str, root: str)",
+      "split": "dev",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "d514fb7a652c9b1d6df17e58b6f6bd019bad8675b453c9a1139704d119be8e4a",
+        "fixed.py": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+        "reference.py": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+        "task.json": "a0b9997f95b05c15919b5455828aa5c30343404f51f6bb9f9568ff9b2f9b81a6"
+      }
+    },
+    {
+      "id": "sql-02",
+      "category": "sql",
+      "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+      "contract": "handle(value: str, root: str)",
+      "split": "dev",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "736ff99a4a73f25a3d0dddef69fdb31df1c252e8bb4296ca7ec78940a28b7969",
+        "fixed.py": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+        "reference.py": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+        "task.json": "2f4f83400fab74bd63983851887d96e7ca30772522747f51311166dc0b3feb53"
+      }
+    },
+    {
+      "id": "sql-03",
+      "category": "sql",
+      "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "1c3fe676c3f670c7cc46449bb02d607dab0a3cd08f923e5ec0c982f268850ef8",
+        "fixed.py": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+        "reference.py": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+        "task.json": "cf1221c5ede471e7275dde1ae44c508207b9ad4fe5df7ac3d7945b6e5dbfb5c7"
+      }
+    },
+    {
+      "id": "sql-04",
+      "category": "sql",
+      "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "a5746176d0f6435bd41431009304b1bc1c2eb928b046df93dccd234b96093dca",
+        "fixed.py": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+        "reference.py": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+        "task.json": "68d9e0fea67cb8f9684bc465c7fee3990bae6c6aa14e1a5ccdb44f086aec6e3a"
+      }
+    },
+    {
+      "id": "sql-05",
+      "category": "sql",
+      "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "c18bc76e72f4441f70c4159e3abbc1619952873aef24728a12ab4d175828a5ba",
+        "fixed.py": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+        "reference.py": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+        "task.json": "1cbb7245d6ce29233dfa757f9d6ee82f63b771cbfc48450e4000de70eee35369"
+      }
+    },
+    {
+      "id": "sql-06",
+      "category": "sql",
+      "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "4f58fba532cc9faa73682bbcc34774a5acea4edfc126a3dfc11fe1ecf4645d64",
+        "fixed.py": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+        "reference.py": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+        "task.json": "bc80b045d25a934211ec238a46819263fd1932e538e05c74c784547daac1fd66"
+      }
+    },
+    {
+      "id": "sql-07",
+      "category": "sql",
+      "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "ecc9c0f0e6ce29cd0b068107a0f694d9de8e3bd763958bd4b4855de0b0d59967",
+        "fixed.py": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+        "reference.py": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+        "task.json": "ce3e303449e27238a8eae1648cc54d5f9ebe3a06425880485b251224ea93e79d"
+      }
+    },
+    {
+      "id": "sql-08",
+      "category": "sql",
+      "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "02cd523dbbcee31e23e8966d48d3569171007c3b45a8dcfe5a0fc04da2d425d2",
+        "fixed.py": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+        "reference.py": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+        "task.json": "3d6afec0f3d527d819f31d56050595e3e85b57e5f90adca7847690aaf7a31be2"
+      }
+    },
+    {
+      "id": "sql-09",
+      "category": "sql",
+      "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "0e6734b517fe3f06d6f773e8d9d0861b8938db3a1992dda50b209d01248bb63a",
+        "fixed.py": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+        "reference.py": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+        "task.json": "2222f3177c2840919588c28209aaa10c019f3f2dd1a9a25f2956969424134778"
+      }
+    },
+    {
+      "id": "sql-10",
+      "category": "sql",
+      "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+      "contract": "handle(value: str, root: str)",
+      "split": "eval",
+      "origin": "synthetic_hand_authored",
+      "license": "CC0-1.0 (these synthetic fixtures only)",
+      "provenance": "scripts/build_dataset.py; template variants, not independent real projects",
+      "review_status": "automated_validation_pending_human_review",
+      "files": {
+        "buggy.py": "57a1b5cde6e2d309815654a0337b395cf4409279a03de35deb708c3c690a0ffa",
+        "fixed.py": "0e11c5162b866ff5f2ecd88dfe808f8f4ad247a9670bb8404b1d90095949d7ea",
+        "reference.py": "566c245410cd9bb28b6d82a84bb5731f96ad9cbe1c75a77790a0a6bc49f2ae30",
+        "task.json": "5e22fc14df0344b5f62953615acb168f784f7c2f08f40fccd15e82ea2fa93612"
+      }
+    }
+  ]
+}

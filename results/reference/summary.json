@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "records": 30,
+  "groups": [
+    {
+      "kind": "reference_validation",
+      "dataset": "controlled",
+      "split": "dev",
+      "group": "reference",
+      "denominator": 6,
+      "confirmed": 6,
+      "runnable": 6,
+      "false_positives": 0,
+      "statuses": {
+        "violation": 6
+      },
+      "coverage_denominator": 0,
+      "mean_branch_coverage": null,
+      "duration_seconds": 173.345,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "model_duration_seconds": 0,
+      "missing_model_timing": 0,
+      "missing_token_usage": 0,
+      "positive_denominator": 6,
+      "negative_denominator": 6,
+      "unknown_labels": 0,
+      "candidate_violations": 0,
+      "confirmed_rate": 1.0,
+      "runnable_rate": 1.0,
+      "false_positive_rate": 0.0
+    },
+    {
+      "kind": "reference_validation",
+      "dataset": "controlled",
+      "split": "eval",
+      "group": "reference",
+      "denominator": 24,
+      "confirmed": 24,
+      "runnable": 24,
+      "false_positives": 0,
+      "statuses": {
+        "violation": 24
+      },
+      "coverage_denominator": 5,
+      "mean_branch_coverage": 0.5,
+      "duration_seconds": 633.3816,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "model_duration_seconds": 0,
+      "missing_model_timing": 0,
+      "missing_token_usage": 0,
+      "positive_denominator": 24,
+      "negative_denominator": 24,
+      "unknown_labels": 0,
+      "candidate_violations": 0,
+      "confirmed_rate": 1.0,
+      "runnable_rate": 1.0,
+      "false_positive_rate": 0.0
+    }
+  ],
+  "complete_abc_blocks": 0,
+  "note": "Reference validation is engineering evidence, not model-generated A/B/C results."
+}

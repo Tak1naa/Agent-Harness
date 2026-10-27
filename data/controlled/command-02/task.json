@@ -1,0 +1,7 @@
+{
+  "id": "command-02",
+  "category": "command",
+  "requirement": "Echo a user-provided label as literal text; never interpret it as shell commands.",
+  "contract": "handle(value: str, root: str)",
+  "split": "dev"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "sql-05",
+  "category": "sql",
+  "requirement": "Query items by name and return (id, visibility) rows. Only PUBLIC rows may be returned. Public name: hello.",
+  "contract": "handle(value: str, root: str)",
+  "split": "eval"
+}

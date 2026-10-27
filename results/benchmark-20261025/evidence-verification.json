@@ -1,0 +1,9 @@
+{
+  "kind": "evidence_verification",
+  "status": "passed",
+  "expected_trials": 72,
+  "observed_trials": 72,
+  "responses_checked": 107,
+  "errors": [],
+  "scope": "Saved response/test identity, usage, executed target/image hashes, paired verdicts, and buggy-only revision feedback. Not an independent security-oracle review."
+}

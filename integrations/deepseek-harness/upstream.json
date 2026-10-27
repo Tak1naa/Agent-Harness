@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/deepseek-ai/deepseek-harness",
+  "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+  "inspected_on": "2026-10-20",
+  "integration": "official dsh-mcp-client, stdio",
+  "status": "sdk_initialized_mcp_protocol_verified_model_turn_pending",
+  "sdk_version": "0.2.1rc2"
+}

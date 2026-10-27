@@ -1,0 +1,7 @@
+{
+  "status": "initialized",
+  "sdk": "0.2.1rc2",
+  "mcp_startup_fail_closed": true,
+  "model_turn": "not_run",
+  "api_requests": 0
+}

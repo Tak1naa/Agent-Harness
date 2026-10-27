@@ -1,0 +1,26 @@
+.venv*/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+.coverage*
+*.egg-info/
+.env
+.env.*
+!.env.example
+.dsh/
+build/
+results/private/
+data/generated/
+# 本地交付包含私有实验原始记录，不能通过压缩包绕过上面的忽略规则。
+deliverables/*.zip
+# 含个人信息的立项原件仅供本地阅读。
+/大创项目立项报告.pdf
+# 本机界面审查截图可能包含私有会话，不进入公开仓库。
+.impeccable/review/
+# 幻灯片导出缓存及已被最终版替代的本地草稿。
+.chart-data-*/
+deliverables/中期答辩-20261026/
+*.key
+*.pem

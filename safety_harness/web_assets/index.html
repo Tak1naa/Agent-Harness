@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f3f3f0"><title>Harness · 项目客户端</title><link rel="stylesheet" href="/assets/client.css"><script src="/assets/client.js" defer></script></head>
+<body>
+<a class="skip" href="#prompt">跳到任务输入</a>
+<div class="client-shell">
+  <aside class="conversation-rail" id="conversation-rail">
+    <div class="app-brand"><span class="app-symbol">h</span><strong>Harness</strong><button class="icon-button mobile-close" id="close-nav" aria-label="收起会话侧栏">收起</button></div>
+    <button class="new-session" id="new-session"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>新会话<span>Ctrl K</span></button>
+    <div class="project-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h7l2 3h9v11H3z"/></svg><span id="project-name">Agent-Harness</span></div>
+    <div class="session-heading">会话<button id="refresh-sessions" class="quiet-button" aria-label="刷新会话列表">刷新</button></div>
+    <div id="sessions" class="sessions"><p class="rail-empty">正在连接本地项目…</p></div>
+    <div class="rail-bottom"><a href="/research" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16M7 15V9m5 6V5m5 10v-4"/></svg>研究与评测<span>打开</span></a><button id="settings-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M9 4v6m6 4v6"/></svg>运行设置</button><div class="backend-label"><span class="state-dot" id="connection-dot"></span><span id="backend-label">连接中</span></div></div>
+  </aside>
+  <main class="conversation-main">
+    <header class="session-bar"><button id="open-nav" class="icon-button mobile-menu" aria-label="打开会话列表">会话</button><div class="session-heading-main"><strong id="session-title">新会话</strong><span id="session-subtitle">Agent-Harness</span></div><button id="toggle-inspector" class="button subtle"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M14 4v16"/></svg>项目面板</button></header>
+    <div id="client-notice" class="client-notice" role="alert" hidden></div>
+    <section id="settings-panel" class="settings-panel" hidden><div class="settings-title"><h2>运行设置</h2><button id="close-settings" class="quiet-button">关闭</button></div><dl id="settings-facts"></dl><p>当前连接项目自有的有界 Agent，不是官方 DeepSeek Harness SDK 会话。工具可读取项目、分析与隔离测试；修改需确认。密钥在项目 .env 中配置，不在客户端显示。</p><button class="button" id="check-runtime">检查隔离执行环境</button><p id="runtime-result" role="status"></p></section>
+    <div id="chat-scroll" class="chat-scroll">
+      <section id="welcome" class="welcome"><div class="welcome-logo">h<span>_</span></div><h1>今天在项目里做什么？</h1><p>阅读代码、分析风险、运行安全测试。<br>把任务交给 Agent，在这里跟进每一步。</p><div class="suggestions"><button data-prompt="阅读 README.md 和 safety_harness/experiment.py，简要说明项目的执行流程。">了解项目的执行流程<span>阅读代码</span></button><button data-prompt="分析 data/controlled/command-01/buggy.py 的安全风险，请调用静态分析工具并解释实际告警。">分析一个命令注入样本<span>静态分析</span></button><button data-prompt="使用参考测试，在隔离容器里配对复现 path-01，解释缺陷版与修复版的实际结果。">复现路径穿越案例<span>隔离执行</span></button><button data-prompt="读取最近一轮 benchmark 的真实统计，说明结果和局限，不要启动新的评测。">总结最新评测结果<span>查看证据</span></button></div></section>
+      <section id="messages" class="messages" aria-label="会话消息" aria-live="polite"></section>
+    </div>
+    <div class="composer-area"><div id="attachments" class="attachments"></div><form id="composer" class="composer"><label class="sr-only" for="prompt">给 Agent 的任务</label><textarea id="prompt" rows="3" maxlength="8000" placeholder="描述任务，或从右侧引用一个文件…"></textarea><div class="composer-toolbar"><div><button class="context-button" type="button" id="attach-file"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12l7-7a3 3 0 014 4L9 19a5 5 0 01-7-7l9-9"/></svg>引用文件</button><span class="model-chip">deepseek-flash</span><span class="permission-chip">修改需确认</span></div><button type="button" id="stop-agent" class="stop-button" hidden>停止</button><button type="submit" id="send-message" class="send-button" aria-label="发送任务"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-6 6l6-6 6 6"/></svg></button></div></form><div class="composer-status"><span id="agent-status">正在连接…</span><span>Enter 发送 · Shift Enter 换行</span></div></div>
+  </main>
+  <aside class="inspector" id="inspector"><div class="inspector-tabs"><button class="inspector-tab selected" data-panel="files">文件</button><button class="inspector-tab" data-panel="changes">修改 <span id="change-count">0</span></button><button class="inspector-tab" data-panel="activity">操作</button><button id="close-inspector" class="quiet-button" aria-label="关闭项目面板">收起</button></div>
+    <section id="panel-files" class="inspector-panel"><div class="file-search"><label class="sr-only" for="file-search">搜索项目文件</label><input id="file-search" type="search" placeholder="搜索项目文件…"></div><div id="file-tree" class="file-tree"></div><section id="file-preview" class="file-preview" hidden><div class="file-preview-bar"><strong id="preview-path"></strong><button id="reference-file" class="quiet-button">引用到对话</button><button id="close-preview" class="quiet-button">关闭</button></div><pre id="preview-source" tabindex="0"></pre></section></section>
+    <section id="panel-changes" class="inspector-panel" hidden><div id="changes" class="changes"><p class="inspector-empty">暂无修改提案。<br>Agent 提议修改后，可在这里查看差异并确认应用。</p></div></section>
+    <section id="panel-activity" class="inspector-panel" hidden><div id="activities" class="activities"><p class="inspector-empty">工具调用将在这里显示。<br>可以展开查看参数和真实返回结果。</p></div></section>
+  </aside>
+</div>
+</body></html>
